@@ -1,5 +1,8 @@
 package com.example.snhuchat;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
 
@@ -10,12 +13,16 @@ import org.jgrapht.graph.SimpleWeightedGraph;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.List;
 
 public class CampusMap {
+    private final Context context;
     private final Graph<String, WeightedDescriptiveEdge> snhuGraph; // Graph of SNHU campus
 
-    public CampusMap() {
+    public CampusMap(Context context) {
+        this.context = context;
         snhuGraph = new SimpleWeightedGraph<>(WeightedDescriptiveEdge.class);
         createGraphFromCSV();
     }
@@ -24,7 +31,9 @@ public class CampusMap {
     // Get all the nodes and edges from snhuMap.csv and put them into a simple weighted graph
     private void createGraphFromCSV() {
         try {
-            CSVReader reader = new CSVReader(new FileReader("snhuMap.csv"));
+            InputStream is = context.getAssets().open("snhuMap.csv");
+            InputStreamReader streamReader = new InputStreamReader(is);
+            CSVReader reader = new CSVReader(streamReader);
             String[] nextLine;
             reader.readNext(); // Skip first line of the CSV
             while ((nextLine = reader.readNext()) != null) {

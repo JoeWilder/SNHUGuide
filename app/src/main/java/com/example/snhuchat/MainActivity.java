@@ -19,6 +19,9 @@ import com.example.snhuchat.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
@@ -37,9 +40,13 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        CampusMap map = new CampusMap();
 
-        Log.d("MyTag", "Here is the map: " + map.getGraph());
+        CampusMap map = new CampusMap(getApplicationContext());
+
+        Log.d("MyTag", "Here is the shortest path from student center to dining hall: "
+                + map.shortestPath("studentcenter","dininghall"));
+
+
 
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
