@@ -1,76 +1,111 @@
 package com.example.snhuchat;
 
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.View;
+//import com.android.volley.Request;
+//import com.android.volley.RequestQueue;
+//import com.android.volley.Response;
+//import com.android.volley.VolleyError;
+//import com.android.volley.toolbox.JsonObjectRequest;
+//import com.android.volley.toolbox.Volley;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import com.example.snhuchat.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
+    private EditText userMsgEdt;
+    private final String BOT_KEY = "bot";
+
+    // creating a variable for array list and adapter class.
+    private ArrayList<MessageModal> messageModalArrayList;
+    private MessageRVAdapter messageRVAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        // on below line we are initializing all our views.
+        // creating variables for our
+        // widgets in xml file.
+        RecyclerView chatsRV = findViewById(R.id.idRVChats);
+        ImageButton sendMsgIB = findViewById(R.id.idIBSend);
+        userMsgEdt = findViewById(R.id.idEdtMessage);
 
-        setSupportActionBar(binding.toolbar);
+        // below line is to initialize our request queue.
+        // creating a variable for
+        // our volley request queue.
+        //RequestQueue mRequestQueue = Volley.newRequestQueue(MainActivity.this);
+        //mRequestQueue.getCache().clear();
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        // creating a new array list
+        messageModalArrayList = new ArrayList<>();
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        // adding on click listener for send message button.
+        sendMsgIB.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                // checking if the message entered
+                // by user is empty or not.
+                if (userMsgEdt.getText().toString().isEmpty()) {
+                    // if the edit text is empty display a toast message.
+                    Toast.makeText(MainActivity.this, "Please enter your message..", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // calling a method to send message
+                // to our bot to get response.
+                sendMessage(userMsgEdt.getText().toString());
+
+                // below line we are setting text in our edit text as empty
+                userMsgEdt.setText("");
             }
         });
+
+        // on below line we are initializing our adapter class and passing our array list to it.
+        messageRVAdapter = new MessageRVAdapter(messageModalArrayList, this);
+
+        // below line we are creating a variable for our linear layout manager.
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this, RecyclerView.VERTICAL, false);
+
+        // below line is to set layout
+        // manager to our recycler view.
+        chatsRV.setLayoutManager(linearLayoutManager);
+
+        // below line we are setting
+        // adapter to our recycler view.
+        chatsRV.setAdapter(messageRVAdapter);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+    private void sendMessage(String userMsg) {
+        // below line is to pass message to our
+        // array list which is entered by the user.
+        String USER_KEY = "user";
+        messageModalArrayList.add(new MessageModal(userMsg, USER_KEY));
+        messageRVAdapter.notifyDataSetChanged();
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        // url for our brain
+        // make sure to add mshape for uid.
+        // make sure to add your url.
+        String url = "Enter you API URL here" + userMsg;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        // creating a variable for our request queue.
+        //RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
 
-        return super.onOptionsItemSelected(item);
-    }
+        // on below line we are making a json object request for a get request and passing our url .
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
+        // at last adding json object
+        // request to our queue.
     }
 }
