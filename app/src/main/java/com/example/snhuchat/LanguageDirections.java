@@ -4,12 +4,12 @@ import java.util.*;
 
 public class LanguageDirections {
 
-    public List<String> testArray;
+    public List<String> givenArray;
     public Dictionary<String, String> edgeDictionary;
 
-    public LanguageDirections() // Add functionality to get list from other function
+    public LanguageDirections(List<String> originalArray) // Add functionality to get list from other function
     {
-        testArray = Arrays.asList("studentcenter", "int24", "greenspace", "int32", "dininghall");
+        givenArray = originalArray;
         edgeDictionary = new Hashtable<String, String>();
         edgeDictionary.put("studentcenter, int24", "Head southeast out of the Student Center");
         edgeDictionary.put("int24, greenspace", "Head east across the Green Space");
@@ -22,10 +22,10 @@ public class LanguageDirections {
     {
         String path = "";
         String entry = "";
-        for (int i = 0; i < testArray.size(); i++)
+        for (int i = 0; i < givenArray.size(); i++)
         {
-            if (i != testArray.size() - 1) {
-                entry = testArray.get(i) + ", " + testArray.get(i + 1);
+            if (i != givenArray.size() - 1) {
+                entry = givenArray.get(i) + ", " + givenArray.get(i + 1);
                 path += edgeDictionary.get(entry);
                 path += "\n";
             }

@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MyTag", "Here is the shortest path from student center to dining hall: "
                 + map.shortestPath("studentcenter","dininghall"));
 
-        LanguageDirections translator = new LanguageDirections();
+        LanguageDirections translator = new LanguageDirections(map.shortestPath("studentcenter", "dininghall"));
         Log.d("MyTag", translator.getPath());
 
 
