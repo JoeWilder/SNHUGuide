@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.example.snhuchat.databinding.ActivityMainBinding;
 //import com.android.volley.Request;
 //import com.android.volley.RequestQueue;
 //import com.android.volley.Response;
@@ -99,7 +101,19 @@ public class MainActivity extends AppCompatActivity {
         // make sure to add mshape for uid.
         // make sure to add your url.
         String url = "Enter you API URL here" + userMsg;
-
+        String response = "Good Morning! How are you";
+        if(userMsgEdt.getText().toString().contains("Hi ")){
+            messageModalArrayList.add(new MessageModal("Hello", BOT_KEY));
+        }
+        else if(userMsgEdt.getText().toString().contains("Good morning")){
+            messageModalArrayList.add(new MessageModal(response, BOT_KEY));
+        }
+        else{
+        //messageModalArrayList.add(new MessageModal(response, BOT_KEY));
+        messageModalArrayList.add(new MessageModal("Sorry no response found", BOT_KEY));
+        }
+        // notifying our adapter as data changed.
+        messageRVAdapter.notifyDataSetChanged();
         // creating a variable for our request queue.
         //RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
 
