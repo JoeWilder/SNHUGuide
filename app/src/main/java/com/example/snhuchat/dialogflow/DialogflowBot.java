@@ -75,14 +75,6 @@ public class DialogflowBot {
                 return null;
             }
         });
-
-//        .thenAccept(result -> {
-//            if (result != null) {
-//                Log.d(TAG, "Result: " + result.getQueryResult().getFulfillmentText());
-//            } else {
-//                Log.d(TAG, "Result is null");
-//            }
-//        });
     }
 
 
