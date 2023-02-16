@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MyTag", "Here is the shortest path from student center to dining hall: "
                 + map.shortestPath("studentcenter","dininghall"));
 
-
+        LanguageDirections translator = new LanguageDirections();
+        Log.d("MyTag", translator.getPath());
 
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
