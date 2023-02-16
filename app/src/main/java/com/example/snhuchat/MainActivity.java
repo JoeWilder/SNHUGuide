@@ -109,8 +109,8 @@ public class MainActivity extends AppCompatActivity {
             messageModalArrayList.add(new MessageModal(response, BOT_KEY));
         }
         else{
-        //messageModalArrayList.add(new MessageModal(response, BOT_KEY));
-        messageModalArrayList.add(new MessageModal("Sorry no response found", BOT_KEY));
+            //messageModalArrayList.add(new MessageModal(response, BOT_KEY));
+            messageModalArrayList.add(new MessageModal("Sorry no response found", BOT_KEY));
         }
         // notifying our adapter as data changed.
         messageRVAdapter.notifyDataSetChanged();
