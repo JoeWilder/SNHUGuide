@@ -9,9 +9,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-
 import com.example.snhuchat.databinding.ActivityMainBinding;
+
 //import com.android.volley.Request;
 //import com.android.volley.RequestQueue;
 //import com.android.volley.Response;
@@ -21,7 +20,6 @@ import com.example.snhuchat.databinding.ActivityMainBinding;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -109,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
             messageModalArrayList.add(new MessageModal(response, BOT_KEY));
         }
         else{
-            //messageModalArrayList.add(new MessageModal(response, BOT_KEY));
-            messageModalArrayList.add(new MessageModal("Sorry no response found", BOT_KEY));
+        //messageModalArrayList.add(new MessageModal(response, BOT_KEY));
+        messageModalArrayList.add(new MessageModal("Sorry no response found", BOT_KEY));
         }
         // notifying our adapter as data changed.
         messageRVAdapter.notifyDataSetChanged();

@@ -7,19 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:popupTheme="@style/Theme.SNHUChat.PopupOverlay" />
-
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.SNHUChat.AppBarOverlay">
 
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.SNHUChat.PopupOverlay"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -45,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
-            android:hint="Enter Message" />
+            android:hint="@string/enter_message" />
 
         <!--button to send message-->
         <ImageButton
@@ -56,7 +55,8 @@
             android:layout_weight="1"
             android:background="@color/purple_200"
             android:src="@android:drawable/ic_menu_send"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            android:contentDescription="@string/todo" />
 
     </LinearLayout>
 
