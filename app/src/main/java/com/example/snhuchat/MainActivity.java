@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
     CampusMap map;
 
+    LanguageDirections translator;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,14 +47,7 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-
         map = new CampusMap(getApplicationContext());
-
-        Log.d(TAG, "Shortest path from student center to dining hall: "
-                + map.shortestPath("studentcenter","dininghall"));
-
-        LanguageDirections translator = new LanguageDirections(map.shortestPath("studentcenter","dininghall"));
-        Log.d("MyTag", translator.getPath());
 
         bot = new DialogflowBot(this);
 
@@ -60,18 +56,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                Log.d(TAG, "button click!");
                 CompletableFuture<QueryResult> responseFuture = bot
-                        .sendMessageToBot("Where is the wellness center?");
+                        .sendMessageToBot("What is the wellnesss center");
                 responseFuture.thenAccept(response ->
-                        processResponse(response)
+                        Log.d(TAG, processResponse(response))
                 );
             }
         });
     }
 
     public String processResponse(QueryResult result) {
-        String intent = String.valueOf(result.getIntent());
+        String intent = String.valueOf(result.getIntent().getDisplayName());
         String returnMessage = result.getFulfillmentText();
 
         switch(intent)
@@ -81,16 +76,14 @@ public class MainActivity extends AppCompatActivity {
             case("Get Directions"):
                 List<String> items = Arrays. asList(returnMessage.split("\\s*,\\s*"));
 
-                String startNode = items.get(0);
-                String endNode = items.get(1);
+                String startNode = items.get(0).toLowerCase();
+                String endNode = items.get(1).toLowerCase();
 
                 List<String> path = map.shortestPath(startNode, endNode);
 
-                for(String s : path)
-                {
-                    Log.d(TAG, s);
-                }
-                //Calls the natural language conversion function
+                translator = new LanguageDirections(path);
+
+                returnMessage = translator.getPath();
 
                 break;
             case("Get Location"):
