@@ -1,31 +1,33 @@
 package com.example.snhuchat;
 
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.snhuchat.databinding.ActivityMainBinding;
+import com.example.snhuchat.dialogflow.DialogflowBot;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.cloud.dialogflow.v2.QueryResult;
 
-import android.view.Menu;
-import android.view.MenuItem;
-
-import java.io.IOException;
-import java.io.InputStream;
+import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    private final String TAG = "mainactivity";
+
+    DialogflowBot bot;
+
+    CampusMap map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,23 +43,37 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
 
-        CampusMap map = new CampusMap(getApplicationContext());
+        map = new CampusMap(getApplicationContext());
 
-        Log.d("MyTag", "Here is the shortest path from student center to dining hall: "
+        Log.d(TAG, "Shortest path from student center to dining hall: "
                 + map.shortestPath("studentcenter","dininghall"));
 
         LanguageDirections translator = new LanguageDirections(map.shortestPath("studentcenter","dininghall"));
         Log.d("MyTag", translator.getPath());
 
+        bot = new DialogflowBot(this);
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                Log.d(TAG, "button click!");
+                CompletableFuture<QueryResult> responseFuture = bot
+                        .sendMessageToBot("Where is the wellness center?");
+                responseFuture.thenAccept(response ->
+                        processResponse(response)
+                );
             }
         });
     }
+
+
+    public void processResponse(QueryResult result) {
+        Log.d(TAG, "Response: " + result.getIntent());
+        Log.d(TAG, "Response: " + result.getFulfillmentText());
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -87,4 +103,5 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }
