@@ -104,7 +104,7 @@ public class LanguageDirections {
         edgeDictionary.put("int33, int32", "Head west around Webster");
         edgeDictionary.put("int35, int30", "Head northwest into Webster");
         edgeDictionary.put("int35, webster", "In the Webster parking lot");
-                edgeDictionary.put("int35, lot18", "Head east towards Lot 18");
+        edgeDictionary.put("int35, lot18", "Head east towards Lot 18");
         edgeDictionary.put("webster, lot18", "Head northwest across the street towards SETA");
         edgeDictionary.put("int71, int28", "Head northwest towards the Green Space");
         edgeDictionary.put("int32, greenspace", "Head west across the Green Space");
