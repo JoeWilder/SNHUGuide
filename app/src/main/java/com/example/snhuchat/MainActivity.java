@@ -17,6 +17,8 @@ import com.example.snhuchat.dialogflow.DialogflowBot;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.cloud.dialogflow.v2.QueryResult;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
@@ -66,10 +68,44 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public String processResponse(QueryResult result) {
+        String intent = String.valueOf(result.getIntent());
+        String returnMessage = result.getFulfillmentText();
 
-    public void processResponse(QueryResult result) {
-        Log.d(TAG, "Response: " + result.getIntent());
-        Log.d(TAG, "Response: " + result.getFulfillmentText());
+        switch(intent)
+        {
+            case("Default Welcome Intent"):
+                break;
+            case("Get Directions"):
+                List<String> items = Arrays. asList(returnMessage.split("\\s*,\\s*"));
+
+                String startNode = items.get(0);
+                String endNode = items.get(1);
+
+                List<String> path = map.shortestPath(startNode, endNode);
+
+                for(String s : path)
+                {
+                    Log.d(TAG, s);
+                }
+                //Calls the natural language conversion function
+
+                break;
+            case("Get Location"):
+                break;
+            case("Tutoring Generic"):
+            case("Tutoring Specific Class"):
+                break;
+            case("Wellness"):
+            case("Wellness Contact"):
+            case("Wellness COVID"):
+            case("Wellness Medical Records"):
+                break;
+            default:
+                break;
+        }
+
+        return returnMessage;
     }
 
 
