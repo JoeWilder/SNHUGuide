@@ -85,9 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
                 List<String> path = map.shortestPath(startNode, endNode);
 
-                translator = new LanguageDirections(path);
-
-                returnMessage = translator.getPath();
+                returnMessage = LanguageDirections.getPath(path);
 
                 break;
             case("Get Location"):
