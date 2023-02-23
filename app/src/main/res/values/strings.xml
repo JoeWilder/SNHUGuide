@@ -12,4 +12,5 @@
     <string name="snhu_chat">SNHU Chat</string>
     <string name="enter_message">Enter Message</string>
     <string name="todo">TODO</string>
+    <string name="user_message">User message</string>
 </resources>

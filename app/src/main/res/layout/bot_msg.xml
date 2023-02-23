@@ -13,8 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:background="@color/Blue"
-
+        android:background="@color/white"
         >
 
         <!--below widget is for image of bot-->
@@ -22,7 +21,8 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_bot" />
+            android:src="@drawable/ic_bot"
+            android:contentDescription="TODO" />
 
         <!--below widget is for
             displaying message of bot-->
@@ -33,8 +33,8 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"
             android:padding="3dp"
+            android:textSize="23sp"
             android:text="@string/snhu_chat"
-            android:textSize="23dp"
             android:textColor="@color/black" />
 
     </LinearLayout>

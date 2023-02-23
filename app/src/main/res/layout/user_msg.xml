@@ -24,8 +24,8 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="5dp"
             android:padding="3dp"
-            android:text="User message"
-            android:textSize="23dp"
+            android:text="@string/user_message"
+            android:textSize="23sp"
             android:textColor="@color/black" />
 
         <!--we are displaying user icon-->
