@@ -5,13 +5,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -23,6 +17,21 @@ import com.example.snhuchat.dialogflow.DialogflowBot;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.cloud.dialogflow.v2.QueryResult;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import com.example.snhuchat.databinding.ActivityMainBinding;
+
 //import com.android.volley.Request;
 //import com.android.volley.RequestQueue;
 //import com.android.volley.Response;
@@ -33,30 +42,30 @@ import com.google.cloud.dialogflow.v2.QueryResult;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
 
+    private final String TAG = "mainactivity";
     private EditText userMsgEdt;
 
     DialogflowBot bot;
 
-    CampusMap map;
+    private CampusMap map;
 
-    LanguageDirections translator;
+    private LanguageDirections translator;
 
     // creating a variable for array list and adapter class.
     private ArrayList<MessageModal> messageModalArrayList;
     private MessageRVAdapter messageRVAdapter;
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
-    private final String TAG = "mainactivity";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        bot = new DialogflowBot(this);
+
+        map = new CampusMap(getApplicationContext());
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -77,11 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
         // adding on click listener for send message button.
         sendMsgIB.setOnClickListener(new View.OnClickListener() {
-        map = new CampusMap(getApplicationContext());
-
-        bot = new DialogflowBot(this);
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // checking if the message entered by user is empty or not.
@@ -93,56 +97,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // calling a method to send message to our bot to get response.
                 sendMessage(userMsgEdt.getText().toString());
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                CompletableFuture<QueryResult> responseFuture = bot
-                        .sendMessageToBot("What is the wellnesss center");
-                responseFuture.thenAccept(response ->
-                        Log.d(TAG, processResponse(response))
-                );
-            }
-        });
-    }
-
-    public String processResponse(QueryResult result) {
-        String intent = String.valueOf(result.getIntent().getDisplayName());
-        String returnMessage = result.getFulfillmentText();
-
-        switch(intent)
-        {
-            case("Default Welcome Intent"):
-                break;
-            case("Get Directions"):
-                List<String> items = Arrays. asList(returnMessage.split("\\s*,\\s*"));
-
-                String startNode = items.get(0).toLowerCase();
-                String endNode = items.get(1).toLowerCase();
-
-                List<String> path = map.shortestPath(startNode, endNode);
-
-                translator = new LanguageDirections(path);
-
-                returnMessage = translator.getPath();
-
-                break;
-            case("Get Location"):
-                break;
-            case("Tutoring Generic"):
-            case("Tutoring Specific Class"):
-                break;
-            case("Wellness"):
-            case("Wellness Contact"):
-            case("Wellness COVID"):
-            case("Wellness Medical Records"):
-                break;
-            default:
-                break;
-        }
-
-        return returnMessage;
-    }
-
 
                 //setting text in our edit text as empty
                 userMsgEdt.setText("");
@@ -177,16 +131,15 @@ public class MainActivity extends AppCompatActivity {
         //String url = "Enter you API URL here" + userMsg;
         String response = "Good Morning! How are you";
         String BOT_KEY = "bot";
-        if(userMsgEdt.getText().toString().contains("Hi ")){
-            messageModalArrayList.add(new MessageModal("Hello", BOT_KEY));
-        }
-        else if(userMsgEdt.getText().toString().contains("Good morning")){
-            messageModalArrayList.add(new MessageModal(response, BOT_KEY));
-        }
-        else{
-        //messageModalArrayList.add(new MessageModal(response, BOT_KEY));
-        messageModalArrayList.add(new MessageModal("Sorry no response found", BOT_KEY));
-        }
+
+        Log.d(TAG,userMsg);
+
+        CompletableFuture<QueryResult> responseFuture = bot
+                .sendMessageToBot(userMsg);
+        responseFuture.thenAccept(botResponse ->
+               processResponse(botResponse, BOT_KEY)
+        );
+
         // notifying our adapter as data changed.
         messageRVAdapter.notifyDataSetChanged();
         // creating a variable for our request queue.
@@ -197,4 +150,43 @@ public class MainActivity extends AppCompatActivity {
         // at last adding json object
         // request to our queue.
     }
+
+    public void processResponse(QueryResult result, String BOT_KEY) {
+        String intent = String.valueOf(result.getIntent().getDisplayName());
+        String returnMessage = result.getFulfillmentText();
+
+        switch(intent)
+        {
+            case("Default Welcome Intent"):
+                break;
+            case("Get Directions"):
+                List<String> items = Arrays. asList(returnMessage.split("\\s*,\\s*"));
+
+                String startNode = items.get(0).toLowerCase();
+                String endNode = items.get(1).toLowerCase();
+
+                List<String> path = map.shortestPath(startNode, endNode);
+
+                translator = new LanguageDirections(path);
+
+                returnMessage = translator.getPath();
+
+                break;
+            case("Get Location"):
+                break;
+            case("Tutoring Generic"):
+            case("Tutoring Specific Class"):
+                break;
+            case("Wellness"):
+            case("Wellness Contact"):
+            case("Wellness COVID"):
+            case("Wellness Medical Records"):
+                break;
+            default:
+                break;
+        }
+
+        messageModalArrayList.add(new MessageModal(returnMessage, BOT_KEY));
+    }
+
 }
