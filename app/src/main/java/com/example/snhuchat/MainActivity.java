@@ -9,17 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.snhuchat.databinding.ActivityMainBinding;
 
-//import com.android.volley.Request;
-//import com.android.volley.RequestQueue;
-//import com.android.volley.Response;
-//import com.android.volley.VolleyError;
-//import com.android.volley.toolbox.JsonObjectRequest;
-//import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         // below line is to initialize our request queue.
         // creating a variable for
         // our volley request queue.
-        //RequestQueue mRequestQueue = Volley.newRequestQueue(MainActivity.this);
         //mRequestQueue.getCache().clear();
 
         messageModalArrayList = new ArrayList<>();
@@ -87,12 +76,7 @@ public class MainActivity extends AppCompatActivity {
         // array list which is entered by the user.
         String USER_KEY = "user";
         messageModalArrayList.add(new MessageModal(userMsg, USER_KEY));
-        messageRVAdapter.notifyDataSetChanged();
-
-        // url for our brain
-        // make sure to add mshape for uid.
-        // make sure to add your url.
-
+        //messageRVAdapter.notifyDataSetChanged();
 
         //String url = "Enter you API URL here" + userMsg;
         String response = "Good Morning! How are you";
