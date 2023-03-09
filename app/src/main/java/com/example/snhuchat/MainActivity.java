@@ -1,27 +1,6 @@
 package com.example.snhuchat;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.snhuchat.databinding.ActivityMainBinding;
-import com.example.snhuchat.dialogflow.DialogflowBot;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.cloud.dialogflow.v2.QueryResult;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
-
-import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -30,31 +9,22 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.snhuchat.databinding.ActivityMainBinding;
 
-//import com.android.volley.Request;
-//import com.android.volley.RequestQueue;
-//import com.android.volley.Response;
-//import com.android.volley.VolleyError;
-//import com.android.volley.toolbox.JsonObjectRequest;
-//import com.android.volley.toolbox.Volley;
+import com.example.snhuchat.dialogflow.DialogflowBot;
+import com.google.cloud.dialogflow.v2.QueryResult;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
 
     private final String TAG = "mainactivity";
     private EditText userMsgEdt;
-
     DialogflowBot bot;
-
     private CampusMap map;
-
     private LanguageDirections translator;
-
-    // creating a variable for array list and adapter class.
     private ArrayList<MessageModal> messageModalArrayList;
     private MessageRVAdapter messageRVAdapter;
 
@@ -79,10 +49,9 @@ public class MainActivity extends AppCompatActivity {
         // below line is to initialize our request queue.
         // creating a variable for
         // our volley request queue.
-        //RequestQueue mRequestQueue = Volley.newRequestQueue(MainActivity.this);
-        //mRequestQueue.getCache().clear();
 
         messageModalArrayList = new ArrayList<>();
+
 
         // adding on click listener for send message button.
         sendMsgIB.setOnClickListener(new View.OnClickListener() {
@@ -127,12 +96,7 @@ public class MainActivity extends AppCompatActivity {
         // make sure to add mshape for uid.
         // make sure to add your url.
 
-
-        //String url = "Enter you API URL here" + userMsg;
-        String response = "Good Morning! How are you";
         String BOT_KEY = "bot";
-
-        Log.d(TAG,userMsg);
 
         CompletableFuture<QueryResult> responseFuture = bot
                 .sendMessageToBot(userMsg);
@@ -140,10 +104,10 @@ public class MainActivity extends AppCompatActivity {
                processResponse(botResponse, BOT_KEY)
         );
 
+        responseFuture.join();
+
         // notifying our adapter as data changed.
-        messageRVAdapter.notifyDataSetChanged();
         // creating a variable for our request queue.
-        //RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
 
         // on below line we are making a json object request for a get request and passing our url .
 
@@ -160,6 +124,19 @@ public class MainActivity extends AppCompatActivity {
             case("Default Welcome Intent"):
                 break;
             case("Get Directions"):
+                // If response is a follow up response don't return directions
+                if (result.getParameters().getFieldsMap().entrySet().isEmpty())
+                {
+                    break;
+                }
+
+                String fieldValue = result.getParameters().getFieldsMap().entrySet().iterator().next().getValue().getStringValue();
+
+                if (fieldValue.equals(""))
+                {
+                    break;
+                }
+
                 List<String> items = Arrays. asList(returnMessage.split("\\s*,\\s*"));
 
                 String startNode = items.get(0).toLowerCase();
@@ -183,10 +160,12 @@ public class MainActivity extends AppCompatActivity {
             case("Wellness Medical Records"):
                 break;
             default:
+                //Log.d(TAG, "got here in switch");
                 break;
         }
 
         messageModalArrayList.add(new MessageModal(returnMessage, BOT_KEY));
-    }
+        messageRVAdapter.notifyDataSetChanged();
 
+    }
 }
