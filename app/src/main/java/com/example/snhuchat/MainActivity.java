@@ -1,27 +1,6 @@
 package com.example.snhuchat;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.snhuchat.databinding.ActivityMainBinding;
-import com.example.snhuchat.dialogflow.DialogflowBot;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.cloud.dialogflow.v2.QueryResult;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.CompletableFuture;
-
-import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -31,7 +10,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.snhuchat.dialogflow.DialogflowBot;
+import com.google.cloud.dialogflow.v2.QueryResult;
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
     private CampusMap map;
 
     private LanguageDirections translator;
-
-    // creating a variable for array list and adapter class.
     private ArrayList<MessageModal> messageModalArrayList;
     private MessageRVAdapter messageRVAdapter;
 
@@ -67,8 +50,11 @@ public class MainActivity extends AppCompatActivity {
         userMsgEdt = findViewById(R.id.idEdtMessage);
 
         // below line is to initialize our request queue.
+        // creating a variable for
+        // our volley request queue.
 
         messageModalArrayList = new ArrayList<>();
+
 
         // adding on click listener for send message button.
         sendMsgIB.setOnClickListener(new View.OnClickListener() {
@@ -107,9 +93,13 @@ public class MainActivity extends AppCompatActivity {
         // array list which is entered by the user.
         String USER_KEY = "user";
         messageModalArrayList.add(new MessageModal(userMsg, USER_KEY));
-        String BOT_KEY = "bot";
+        messageRVAdapter.notifyDataSetChanged();
 
-        Log.d(TAG,userMsg);
+        // url for our brain
+        // make sure to add mshape for uid.
+        // make sure to add your url.
+
+        String BOT_KEY = "bot";
 
         CompletableFuture<QueryResult> responseFuture = bot
                 .sendMessageToBot(userMsg);
@@ -118,8 +108,14 @@ public class MainActivity extends AppCompatActivity {
         );
 
         responseFuture.join();
+
         // notifying our adapter as data changed.
-        messageRVAdapter.notifyDataSetChanged();
+        // creating a variable for our request queue.
+
+        // on below line we are making a json object request for a get request and passing our url .
+
+        // at last adding json object
+        // request to our queue.
     }
 
     public void processResponse(QueryResult result, String BOT_KEY) {
@@ -131,6 +127,19 @@ public class MainActivity extends AppCompatActivity {
             case("Default Welcome Intent"):
                 break;
             case("Get Directions"):
+                // If response is a follow up response don't return directions
+                if (result.getParameters().getFieldsMap().entrySet().isEmpty())
+                {
+                    break;
+                }
+
+                String fieldValue = result.getParameters().getFieldsMap().entrySet().iterator().next().getValue().getStringValue();
+
+                if (fieldValue.equals(""))
+                {
+                    break;
+                }
+
                 List<String> items = Arrays. asList(returnMessage.split("\\s*,\\s*"));
 
                 String startNode = items.get(0).toLowerCase();
@@ -158,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         messageModalArrayList.add(new MessageModal(returnMessage, BOT_KEY));
-    }
+        messageRVAdapter.notifyDataSetChanged();
 
+    }
 }
