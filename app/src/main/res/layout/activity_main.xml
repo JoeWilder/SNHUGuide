@@ -17,7 +17,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/Blue"
+        android:background="@color/purple_700"
         app:popupTheme="@style/Theme.SNHUChat.PopupOverlay"/>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -51,9 +51,9 @@
             android:id="@+id/idIBSend"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="left|bottom"
             android:layout_weight="1"
-            android:background="@color/black"
+            android:background="@color/purple_200"
             android:src="@android:drawable/ic_menu_send"
             app:tint="@color/white"
             android:contentDescription="@string/todo" />

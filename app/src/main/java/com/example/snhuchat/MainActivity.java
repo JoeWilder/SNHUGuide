@@ -67,9 +67,6 @@ public class MainActivity extends AppCompatActivity {
         userMsgEdt = findViewById(R.id.idEdtMessage);
 
         // below line is to initialize our request queue.
-        // creating a variable for
-        // our volley request queue.
-        //mRequestQueue.getCache().clear();
 
         messageModalArrayList = new ArrayList<>();
 
@@ -110,29 +107,19 @@ public class MainActivity extends AppCompatActivity {
         // array list which is entered by the user.
         String USER_KEY = "user";
         messageModalArrayList.add(new MessageModal(userMsg, USER_KEY));
-        //messageRVAdapter.notifyDataSetChanged();
-
-        //String url = "Enter you API URL here" + userMsg;
-        String response = "Good Morning! How are you";
         String BOT_KEY = "bot";
 
         Log.d(TAG,userMsg);
 
         CompletableFuture<QueryResult> responseFuture = bot
                 .sendMessageToBot(userMsg);
-        responseFuture.thenAccept(botResponse ->
-               processResponse(botResponse, BOT_KEY)
+        responseFuture.thenAccept(response ->
+               processResponse(response, BOT_KEY)
         );
 
+        responseFuture.join();
         // notifying our adapter as data changed.
         messageRVAdapter.notifyDataSetChanged();
-        // creating a variable for our request queue.
-        //RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-
-        // on below line we are making a json object request for a get request and passing our url .
-
-        // at last adding json object
-        // request to our queue.
     }
 
     public void processResponse(QueryResult result, String BOT_KEY) {
