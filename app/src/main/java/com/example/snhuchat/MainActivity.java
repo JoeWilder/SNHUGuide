@@ -5,7 +5,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +18,7 @@ import com.google.cloud.dialogflow.v2.QueryResult;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,25 +36,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         bot = new DialogflowBot(this);
 
         map = new CampusMap(getApplicationContext());
-
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // on below line we are initializing all our views.
-        // creating variables for our
-        // widgets in xml file.
         RecyclerView chatsRV = findViewById(R.id.idRVChats);
         ImageButton sendMsgIB = findViewById(R.id.idIBSend);
         userMsgEdt = findViewById(R.id.idEdtMessage);
-
-        // below line is to initialize our request queue.
-        // creating a variable for
-        // our volley request queue.
 
         messageModalArrayList = new ArrayList<>();
 
@@ -95,10 +88,6 @@ public class MainActivity extends AppCompatActivity {
         messageModalArrayList.add(new MessageModal(userMsg, USER_KEY));
         messageRVAdapter.notifyDataSetChanged();
 
-        // url for our brain
-        // make sure to add mshape for uid.
-        // make sure to add your url.
-
         String BOT_KEY = "bot";
 
         CompletableFuture<QueryResult> responseFuture = bot
@@ -108,14 +97,6 @@ public class MainActivity extends AppCompatActivity {
         );
 
         responseFuture.join();
-
-        // notifying our adapter as data changed.
-        // creating a variable for our request queue.
-
-        // on below line we are making a json object request for a get request and passing our url .
-
-        // at last adding json object
-        // request to our queue.
     }
 
     public void processResponse(QueryResult result, String BOT_KEY) {
