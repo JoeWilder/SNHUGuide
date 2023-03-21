@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="idRVChats" type="id" />
+    <item name="idIBSend" type="id" />
+    <item name="idEdtMessage" type="id" />
+    <item name="text" type="id" />
+</resources>
