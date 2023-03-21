@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:theme="@style/Theme.SNHUChat.AppBarOverlay">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:accessibilityPaneTitle="SNHU"
         android:background="@color/purple_700"
         app:popupTheme="@style/Theme.SNHUChat.PopupOverlay"/>
 

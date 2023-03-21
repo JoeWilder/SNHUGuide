@@ -1,5 +1,6 @@
 package com.example.snhuchat;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -7,7 +8,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.TextView;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         bot = new DialogflowBot(this);
 
         map = new CampusMap(getApplicationContext());
