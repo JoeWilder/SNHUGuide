@@ -1,7 +1,7 @@
-# SNHUChat
+# SNHUGuide
 
 ### Description
-SNHUChat is an Android application built in Java that is able to respond to general questions about Southern New Hampshire University.
+SNHUGuide is an Android application built in Java that is able to respond to general questions about Southern New Hampshire University.
 Different functionality from this project includes getting directions to locations on campus, getting information about certain buildings,
 and getting information about certain services provided by Southern New Hampshire University. The application was written in Java using Android Studio.
 For the chatbot functionality, Google Cloud Platform is used to interface with DialogFlow.
