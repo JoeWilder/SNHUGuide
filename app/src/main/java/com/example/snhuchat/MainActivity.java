@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         messageModalArrayList = new ArrayList<>();
 
 
+
         // adding on click listener for send message button.
         sendMsgIB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,9 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
                 List<String> path = map.shortestPath(startNode, endNode);
 
-                translator = new LanguageDirections(path);
-
-                returnMessage = translator.getPath();
+                returnMessage = LanguageDirections.getPath(path);
 
                 break;
             case("Get Location"):

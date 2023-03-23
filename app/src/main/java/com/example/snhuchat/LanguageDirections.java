@@ -3,13 +3,10 @@ package com.example.snhuchat;
 import java.util.*;
 
 public class LanguageDirections {
+    public static Dictionary<String, String> edgeDictionary;
 
-    public List<String> givenArray;
-    public Dictionary<String, String> edgeDictionary;
-
-    public LanguageDirections(List<String> originalArray) // Add functionality to get list from other function
+    public static String getPath(List<String> givenArray)
     {
-        givenArray = originalArray;
         edgeDictionary = new Hashtable<String, String>();
         edgeDictionary.put("lot13, int1", "Head east out of Parking Lot 13");
         edgeDictionary.put("int1, lot12", "Head southwest towards Parking Lot 12");
@@ -417,10 +414,7 @@ public class LanguageDirections {
         edgeDictionary.put("lot40, int67", "Head north away from Parking Lot 40");
         edgeDictionary.put("wellnesscenter, int23", "Head south out of the Wellness Center");
         edgeDictionary.put("wellnesscenter, int24", "Head southeast out of the Wellness Center");
-    }
 
-    public String getPath()
-    {
         String path = "";
         String entry = "";
         for (int i = 0; i < givenArray.size(); i++)
