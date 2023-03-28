@@ -1,0 +1,28 @@
+[
+  {
+    "id": "cd62ac73-f1ab-4b05-b63b-3015fbf7cedc",
+    "data": [
+      {
+        "text": "Does SNHU have tutors?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "05e5fd28-a924-4684-a7a5-0640beacd1c2",
+    "data": [
+      {
+        "text": "Does SNHU offer tutoring?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

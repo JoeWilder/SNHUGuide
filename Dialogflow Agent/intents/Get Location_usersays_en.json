@@ -1,0 +1,44 @@
+[
+  {
+    "id": "00fda0a8-c2cd-48ff-9a5b-7aa936570f4b",
+    "data": [
+      {
+        "text": "Where is ",
+        "userDefined": false
+      },
+      {
+        "text": "$EndLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "EndLocation",
+        "userDefined": true
+      },
+      {
+        "text": " located",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c0c65e57-e27e-48a2-ab0b-7410b56dadcf",
+    "data": [
+      {
+        "text": "Where is ",
+        "userDefined": false
+      },
+      {
+        "text": "$EndLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "EndLocation",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

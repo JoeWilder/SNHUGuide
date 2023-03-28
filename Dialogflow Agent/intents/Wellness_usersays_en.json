@@ -1,0 +1,106 @@
+[
+  {
+    "id": "f93ef976-e9af-4e00-a137-bcd5b416b93f",
+    "data": [
+      {
+        "text": "What does the Wellness Center do?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6db49808-c191-4340-a1ca-78220f801ecc",
+    "data": [
+      {
+        "text": "Health",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "0b740ee2-e5b2-4996-acdf-75439fbe8874",
+    "data": [
+      {
+        "text": "Counseling",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f96e1878-bfa5-4677-a66b-81cc926deb6d",
+    "data": [
+      {
+        "text": "Give me information on health",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "df3b12f4-6bb0-4b27-a20e-7a80509c30e1",
+    "data": [
+      {
+        "text": "Give me information on counseling",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d504e820-21ee-4719-a1aa-a8ce3ae6cafd",
+    "data": [
+      {
+        "text": "Give me information on the Wellness Center.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d70a63c1-bd1b-430c-9102-cd32641640ba",
+    "data": [
+      {
+        "text": "Tell me about the Wellness Center\u0027s health services.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "bfc83ab0-7596-49ac-a105-24b029f1d0b5",
+    "data": [
+      {
+        "text": "What services does the Wellness Center offer?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
