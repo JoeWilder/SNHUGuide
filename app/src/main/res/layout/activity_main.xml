@@ -24,12 +24,13 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <!--recycler view to display our chats-->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVChats"
         android:layout_width="match_parent"
         android:layout_height="441dp"
         android:layout_above="@id/idLLMessage"
-        android:layout_marginBottom="6dp" />
+        android:layout_marginBottom="-19dp" />
 
     <LinearLayout
         android:id="@+id/idLLMessage"
