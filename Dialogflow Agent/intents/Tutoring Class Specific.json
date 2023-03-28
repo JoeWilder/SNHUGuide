@@ -1,0 +1,55 @@
+{
+  "id": "a5dfbd99-4442-4685-90f0-7e1f08756260",
+  "name": "Tutoring Class Specific",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "a5d3bb2c-f212-417d-ab02-b3884b39b17c",
+          "name": "Class",
+          "required": true,
+          "dataType": "@Tutoring_Classes",
+          "value": "$Class",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Tutoring is not offered for that class. Is there another class you\u0027re looking for?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Yes, tutoring is offered for $Class through the Wolak Learning Center! You can find the tutoring schedule online at the following link:\nhttps://snhu.mywconline.com/"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,1508 @@
+[
+  {
+    "value": "IRAC Method",
+    "synonyms": [
+      "IRAC Method"
+    ]
+  },
+  {
+    "value": "Writing",
+    "synonyms": [
+      "Writing"
+    ]
+  },
+  {
+    "value": "ACC-201",
+    "synonyms": [
+      "ACC-201"
+    ]
+  },
+  {
+    "value": "ACC-202",
+    "synonyms": [
+      "ACC-202"
+    ]
+  },
+  {
+    "value": "ACC-307",
+    "synonyms": [
+      "ACC-307"
+    ]
+  },
+  {
+    "value": "ACC-308",
+    "synonyms": [
+      "ACC-308"
+    ]
+  },
+  {
+    "value": "ACC-330",
+    "synonyms": [
+      "ACC-330"
+    ]
+  },
+  {
+    "value": "ACC-345",
+    "synonyms": [
+      "ACC-345"
+    ]
+  },
+  {
+    "value": "ATH-111",
+    "synonyms": [
+      "ATH-111"
+    ]
+  },
+  {
+    "value": "BIO-120",
+    "synonyms": [
+      "BIO-120"
+    ]
+  },
+  {
+    "value": "BIO-120L",
+    "synonyms": [
+      "BIO-120L"
+    ]
+  },
+  {
+    "value": "BIO-121",
+    "synonyms": [
+      "BIO-121"
+    ]
+  },
+  {
+    "value": "BIO-121L",
+    "synonyms": [
+      "BIO-121L"
+    ]
+  },
+  {
+    "value": "BIO-200",
+    "synonyms": [
+      "BIO-200"
+    ]
+  },
+  {
+    "value": "BIO-205",
+    "synonyms": [
+      "BIO-205"
+    ]
+  },
+  {
+    "value": "BIO-205L",
+    "synonyms": [
+      "BIO-205L"
+    ]
+  },
+  {
+    "value": "BIO-211",
+    "synonyms": [
+      "BIO-211"
+    ]
+  },
+  {
+    "value": "BIO-211L",
+    "synonyms": [
+      "BIO-211L"
+    ]
+  },
+  {
+    "value": "BIO-280",
+    "synonyms": [
+      "BIO-280"
+    ]
+  },
+  {
+    "value": "BIO-314",
+    "synonyms": [
+      "BIO-314"
+    ]
+  },
+  {
+    "value": "BIO-314L",
+    "synonyms": [
+      "BIO-314L"
+    ]
+  },
+  {
+    "value": "BIO-320",
+    "synonyms": [
+      "BIO-320"
+    ]
+  },
+  {
+    "value": "BUS-206",
+    "synonyms": [
+      "BUS-206"
+    ]
+  },
+  {
+    "value": "BUS-210",
+    "synonyms": [
+      "BUS-210"
+    ]
+  },
+  {
+    "value": "BUS-225",
+    "synonyms": [
+      "BUS-225"
+    ]
+  },
+  {
+    "value": "BUS-307",
+    "synonyms": [
+      "BUS-307"
+    ]
+  },
+  {
+    "value": "CHM-120",
+    "synonyms": [
+      "CHM-120"
+    ]
+  },
+  {
+    "value": "CHM-120L",
+    "synonyms": [
+      "CHM-120L"
+    ]
+  },
+  {
+    "value": "CHM-121",
+    "synonyms": [
+      "CHM-121"
+    ]
+  },
+  {
+    "value": "CHM-121L",
+    "synonyms": [
+      "CHM-121L"
+    ]
+  },
+  {
+    "value": "CHM-309",
+    "synonyms": [
+      "CHM-309"
+    ]
+  },
+  {
+    "value": "CIS-211",
+    "synonyms": [
+      "CIS-211"
+    ]
+  },
+  {
+    "value": "COM-130",
+    "synonyms": [
+      "COM-130"
+    ]
+  },
+  {
+    "value": "COM-212",
+    "synonyms": [
+      "COM-212"
+    ]
+  },
+  {
+    "value": "COM-235",
+    "synonyms": [
+      "COM-235"
+    ]
+  },
+  {
+    "value": "COM-345",
+    "synonyms": [
+      "COM-345"
+    ]
+  },
+  {
+    "value": "CS-113",
+    "synonyms": [
+      "CS-113"
+    ]
+  },
+  {
+    "value": "CS-113L",
+    "synonyms": [
+      "CS-113L"
+    ]
+  },
+  {
+    "value": "CS-114",
+    "synonyms": [
+      "CS-114"
+    ]
+  },
+  {
+    "value": "CS-114L",
+    "synonyms": [
+      "CS-114L"
+    ]
+  },
+  {
+    "value": "CS-144L",
+    "synonyms": [
+      "CS-144L"
+    ]
+  },
+  {
+    "value": "CS-203",
+    "synonyms": [
+      "CS-203"
+    ]
+  },
+  {
+    "value": "CS-204",
+    "synonyms": [
+      "CS-204"
+    ]
+  },
+  {
+    "value": "CS-217",
+    "synonyms": [
+      "CS-217"
+    ]
+  },
+  {
+    "value": "CS-218",
+    "synonyms": [
+      "CS-218"
+    ]
+  },
+  {
+    "value": "CS-219",
+    "synonyms": [
+      "CS-219"
+    ]
+  },
+  {
+    "value": "CS-231",
+    "synonyms": [
+      "CS-231"
+    ]
+  },
+  {
+    "value": "CS-238",
+    "synonyms": [
+      "CS-238"
+    ]
+  },
+  {
+    "value": "CS-303",
+    "synonyms": [
+      "CS-303"
+    ]
+  },
+  {
+    "value": "CS-304",
+    "synonyms": [
+      "CS-304"
+    ]
+  },
+  {
+    "value": "CS-312",
+    "synonyms": [
+      "CS-312"
+    ]
+  },
+  {
+    "value": "CS-317",
+    "synonyms": [
+      "CS-317"
+    ]
+  },
+  {
+    "value": "CS-321",
+    "synonyms": [
+      "CS-321"
+    ]
+  },
+  {
+    "value": "CS-361",
+    "synonyms": [
+      "CS-361"
+    ]
+  },
+  {
+    "value": "CS-411",
+    "synonyms": [
+      "CS-411"
+    ]
+  },
+  {
+    "value": "DEV-106",
+    "synonyms": [
+      "DEV-106"
+    ]
+  },
+  {
+    "value": "DEV-260",
+    "synonyms": [
+      "DEV-260"
+    ]
+  },
+  {
+    "value": "ECO-201",
+    "synonyms": [
+      "ECO-201"
+    ]
+  },
+  {
+    "value": "ECO-202",
+    "synonyms": [
+      "ECO-202"
+    ]
+  },
+  {
+    "value": "ECO-306",
+    "synonyms": [
+      "ECO-306"
+    ]
+  },
+  {
+    "value": "ECO-322",
+    "synonyms": [
+      "ECO-322"
+    ]
+  },
+  {
+    "value": "EDU-102",
+    "synonyms": [
+      "EDU-102"
+    ]
+  },
+  {
+    "value": "EDU-120",
+    "synonyms": [
+      "EDU-120"
+    ]
+  },
+  {
+    "value": "EDU-206",
+    "synonyms": [
+      "EDU-206"
+    ]
+  },
+  {
+    "value": "EDU-208",
+    "synonyms": [
+      "EDU-208"
+    ]
+  },
+  {
+    "value": "EDU-219",
+    "synonyms": [
+      "EDU-219"
+    ]
+  },
+  {
+    "value": "EDU-225",
+    "synonyms": [
+      "EDU-225"
+    ]
+  },
+  {
+    "value": "EDU-261",
+    "synonyms": [
+      "EDU-261"
+    ]
+  },
+  {
+    "value": "EDU-345",
+    "synonyms": [
+      "EDU-345"
+    ]
+  },
+  {
+    "value": "EDU-359",
+    "synonyms": [
+      "EDU-359"
+    ]
+  },
+  {
+    "value": "EG-110",
+    "synonyms": [
+      "EG-110"
+    ]
+  },
+  {
+    "value": "EG-112",
+    "synonyms": [
+      "EG-112"
+    ]
+  },
+  {
+    "value": "EG-200",
+    "synonyms": [
+      "EG-200"
+    ]
+  },
+  {
+    "value": "EG-201",
+    "synonyms": [
+      "EG-201"
+    ]
+  },
+  {
+    "value": "EG-202",
+    "synonyms": [
+      "EG-202"
+    ]
+  },
+  {
+    "value": "EG-203",
+    "synonyms": [
+      "EG-203"
+    ]
+  },
+  {
+    "value": "EG-207",
+    "synonyms": [
+      "EG-207"
+    ]
+  },
+  {
+    "value": "EG-208",
+    "synonyms": [
+      "EG-208"
+    ]
+  },
+  {
+    "value": "EG-209",
+    "synonyms": [
+      "EG-209"
+    ]
+  },
+  {
+    "value": "EG-325",
+    "synonyms": [
+      "EG-325"
+    ]
+  },
+  {
+    "value": "EG-333",
+    "synonyms": [
+      "EG-333"
+    ]
+  },
+  {
+    "value": "EG-340",
+    "synonyms": [
+      "EG-340"
+    ]
+  },
+  {
+    "value": "EG-341",
+    "synonyms": [
+      "EG-341"
+    ]
+  },
+  {
+    "value": "EG-361",
+    "synonyms": [
+      "EG-361"
+    ]
+  },
+  {
+    "value": "ENG-099",
+    "synonyms": [
+      "ENG-099"
+    ]
+  },
+  {
+    "value": "ENG-105",
+    "synonyms": [
+      "ENG-105"
+    ]
+  },
+  {
+    "value": "ENG-120",
+    "synonyms": [
+      "ENG-120"
+    ]
+  },
+  {
+    "value": "ENG-122",
+    "synonyms": [
+      "ENG-122"
+    ]
+  },
+  {
+    "value": "ENG-200",
+    "synonyms": [
+      "ENG-200"
+    ]
+  },
+  {
+    "value": "ENG-226",
+    "synonyms": [
+      "ENG-226"
+    ]
+  },
+  {
+    "value": "ENG-230",
+    "synonyms": [
+      "ENG-230"
+    ]
+  },
+  {
+    "value": "ENG-300",
+    "synonyms": [
+      "ENG-300"
+    ]
+  },
+  {
+    "value": "ENG-328",
+    "synonyms": [
+      "ENG-328"
+    ]
+  },
+  {
+    "value": "ENG-329",
+    "synonyms": [
+      "ENG-329"
+    ]
+  },
+  {
+    "value": "ENG-330",
+    "synonyms": [
+      "ENG-330"
+    ]
+  },
+  {
+    "value": "ENG-338",
+    "synonyms": [
+      "ENG-338"
+    ]
+  },
+  {
+    "value": "ENG-340",
+    "synonyms": [
+      "ENG-340"
+    ]
+  },
+  {
+    "value": "ENG-350",
+    "synonyms": [
+      "ENG-350"
+    ]
+  },
+  {
+    "value": "ENG-370",
+    "synonyms": [
+      "ENG-370"
+    ]
+  },
+  {
+    "value": "ENG-431",
+    "synonyms": [
+      "ENG-431"
+    ]
+  },
+  {
+    "value": "ENV-100",
+    "synonyms": [
+      "ENV-100"
+    ]
+  },
+  {
+    "value": "ENV-101",
+    "synonyms": [
+      "ENV-101"
+    ]
+  },
+  {
+    "value": "ENV-250",
+    "synonyms": [
+      "ENV-250"
+    ]
+  },
+  {
+    "value": "ENV-348",
+    "synonyms": [
+      "ENV-348"
+    ]
+  },
+  {
+    "value": "FAS-110",
+    "synonyms": [
+      "FAS-110"
+    ]
+  },
+  {
+    "value": "FAS-345",
+    "synonyms": [
+      "FAS-345"
+    ]
+  },
+  {
+    "value": "FAS-380",
+    "synonyms": [
+      "FAS-380"
+    ]
+  },
+  {
+    "value": "FIN-250",
+    "synonyms": [
+      "FIN-250"
+    ]
+  },
+  {
+    "value": "FYS-101",
+    "synonyms": [
+      "FYS-101"
+    ]
+  },
+  {
+    "value": "GAD-105",
+    "synonyms": [
+      "GAD-105"
+    ]
+  },
+  {
+    "value": "GAD-201",
+    "synonyms": [
+      "GAD-201"
+    ]
+  },
+  {
+    "value": "GAD-202",
+    "synonyms": [
+      "GAD-202"
+    ]
+  },
+  {
+    "value": "GAD-210",
+    "synonyms": [
+      "GAD-210"
+    ]
+  },
+  {
+    "value": "GAD-215",
+    "synonyms": [
+      "GAD-215"
+    ]
+  },
+  {
+    "value": "GAD-300",
+    "synonyms": [
+      "GAD-300"
+    ]
+  },
+  {
+    "value": "GAD-400",
+    "synonyms": [
+      "GAD-400"
+    ]
+  },
+  {
+    "value": "GAM-110",
+    "synonyms": [
+      "GAM-110"
+    ]
+  },
+  {
+    "value": "GAM-120",
+    "synonyms": [
+      "GAM-120"
+    ]
+  },
+  {
+    "value": "GAM-220",
+    "synonyms": [
+      "GAM-220"
+    ]
+  },
+  {
+    "value": "GAM-325",
+    "synonyms": [
+      "GAM-325"
+    ]
+  },
+  {
+    "value": "GAM-335",
+    "synonyms": [
+      "GAM-335"
+    ]
+  },
+  {
+    "value": "GAM-350",
+    "synonyms": [
+      "GAM-350"
+    ]
+  },
+  {
+    "value": "GAM-370",
+    "synonyms": [
+      "GAM-370"
+    ]
+  },
+  {
+    "value": "GDE-150",
+    "synonyms": [
+      "GDE-150"
+    ]
+  },
+  {
+    "value": "GEO-200",
+    "synonyms": [
+      "GEO-200"
+    ]
+  },
+  {
+    "value": "GRA-220",
+    "synonyms": [
+      "GRA-220"
+    ]
+  },
+  {
+    "value": "GRA-310",
+    "synonyms": [
+      "GRA-310"
+    ]
+  },
+  {
+    "value": "GRA-470",
+    "synonyms": [
+      "GRA-470"
+    ]
+  },
+  {
+    "value": "HIS-101",
+    "synonyms": [
+      "HIS-101"
+    ]
+  },
+  {
+    "value": "HIS-113",
+    "synonyms": [
+      "HIS-113"
+    ]
+  },
+  {
+    "value": "HIS-114",
+    "synonyms": [
+      "HIS-114"
+    ]
+  },
+  {
+    "value": "HIS-220",
+    "synonyms": [
+      "HIS-220"
+    ]
+  },
+  {
+    "value": "HIS-235",
+    "synonyms": [
+      "HIS-235"
+    ]
+  },
+  {
+    "value": "HIS-241",
+    "synonyms": [
+      "HIS-241"
+    ]
+  },
+  {
+    "value": "HIS-260",
+    "synonyms": [
+      "HIS-260"
+    ]
+  },
+  {
+    "value": "HIS-323",
+    "synonyms": [
+      "HIS-323"
+    ]
+  },
+  {
+    "value": "HUM-100",
+    "synonyms": [
+      "HUM-100"
+    ]
+  },
+  {
+    "value": "HUM-110-A",
+    "synonyms": [
+      "HUM-110-A"
+    ]
+  },
+  {
+    "value": "HUM-110-B",
+    "synonyms": [
+      "HUM-110-B"
+    ]
+  },
+  {
+    "value": "HUM-110-C",
+    "synonyms": [
+      "HUM-110-C"
+    ]
+  },
+  {
+    "value": "HUM-110E",
+    "synonyms": [
+      "HUM-110E"
+    ]
+  },
+  {
+    "value": "HUM-200",
+    "synonyms": [
+      "HUM-200"
+    ]
+  },
+  {
+    "value": "HUM-201",
+    "synonyms": [
+      "HUM-201"
+    ]
+  },
+  {
+    "value": "HUM-202",
+    "synonyms": [
+      "HUM-202"
+    ]
+  },
+  {
+    "value": "INT-220",
+    "synonyms": [
+      "INT-220"
+    ]
+  },
+  {
+    "value": "IT-140",
+    "synonyms": [
+      "IT-140"
+    ]
+  },
+  {
+    "value": "IT-145",
+    "synonyms": [
+      "IT-145"
+    ]
+  },
+  {
+    "value": "JUS-101",
+    "synonyms": [
+      "JUS-101"
+    ]
+  },
+  {
+    "value": "JUS-102",
+    "synonyms": [
+      "JUS-102"
+    ]
+  },
+  {
+    "value": "JUS-103",
+    "synonyms": [
+      "JUS-103"
+    ]
+  },
+  {
+    "value": "JUS-201",
+    "synonyms": [
+      "JUS-201"
+    ]
+  },
+  {
+    "value": "JUS-215",
+    "synonyms": [
+      "JUS-215"
+    ]
+  },
+  {
+    "value": "JUS-224",
+    "synonyms": [
+      "JUS-224"
+    ]
+  },
+  {
+    "value": "JUS-261",
+    "synonyms": [
+      "JUS-261"
+    ]
+  },
+  {
+    "value": "JUS-305",
+    "synonyms": [
+      "JUS-305"
+    ]
+  },
+  {
+    "value": "JUS-309",
+    "synonyms": [
+      "JUS-309"
+    ]
+  },
+  {
+    "value": "JUS-325",
+    "synonyms": [
+      "JUS-325"
+    ]
+  },
+  {
+    "value": "JUS-331",
+    "synonyms": [
+      "JUS-331"
+    ]
+  },
+  {
+    "value": "JUS-375",
+    "synonyms": [
+      "JUS-375"
+    ]
+  },
+  {
+    "value": "JUS-394",
+    "synonyms": [
+      "JUS-394"
+    ]
+  },
+  {
+    "value": "JUS-395",
+    "synonyms": [
+      "JUS-395"
+    ]
+  },
+  {
+    "value": "JUS-455",
+    "synonyms": [
+      "JUS-455"
+    ]
+  },
+  {
+    "value": "JUS-468",
+    "synonyms": [
+      "JUS-468"
+    ]
+  },
+  {
+    "value": "LIT-101",
+    "synonyms": [
+      "LIT-101"
+    ]
+  },
+  {
+    "value": "LIT-231",
+    "synonyms": [
+      "LIT-231"
+    ]
+  },
+  {
+    "value": "LIT-239",
+    "synonyms": [
+      "LIT-239"
+    ]
+  },
+  {
+    "value": "LIT-241",
+    "synonyms": [
+      "LIT-241"
+    ]
+  },
+  {
+    "value": "LIT-250",
+    "synonyms": [
+      "LIT-250"
+    ]
+  },
+  {
+    "value": "LIT-300",
+    "synonyms": [
+      "LIT-300"
+    ]
+  },
+  {
+    "value": "LIT-319",
+    "synonyms": [
+      "LIT-319"
+    ]
+  },
+  {
+    "value": "LIT-390",
+    "synonyms": [
+      "LIT-390"
+    ]
+  },
+  {
+    "value": "MAT-051",
+    "synonyms": [
+      "MAT-051"
+    ]
+  },
+  {
+    "value": "MAT-0ST2",
+    "synonyms": [
+      "MAT-0ST2"
+    ]
+  },
+  {
+    "value": "MAT-107",
+    "synonyms": [
+      "MAT-107"
+    ]
+  },
+  {
+    "value": "MAT-108",
+    "synonyms": [
+      "MAT-108"
+    ]
+  },
+  {
+    "value": "MAT-135",
+    "synonyms": [
+      "MAT-135"
+    ]
+  },
+  {
+    "value": "MAT-136",
+    "synonyms": [
+      "MAT-136"
+    ]
+  },
+  {
+    "value": "MAT-140",
+    "synonyms": [
+      "MAT-140"
+    ]
+  },
+  {
+    "value": "MAT-142",
+    "synonyms": [
+      "MAT-142"
+    ]
+  },
+  {
+    "value": "MAT-215",
+    "synonyms": [
+      "MAT-215"
+    ]
+  },
+  {
+    "value": "MAT-222",
+    "synonyms": [
+      "MAT-222"
+    ]
+  },
+  {
+    "value": "MAT-224",
+    "synonyms": [
+      "MAT-224"
+    ]
+  },
+  {
+    "value": "MAT-225",
+    "synonyms": [
+      "MAT-225"
+    ]
+  },
+  {
+    "value": "MAT-239",
+    "synonyms": [
+      "MAT-239"
+    ]
+  },
+  {
+    "value": "MAT-240",
+    "synonyms": [
+      "MAT-240"
+    ]
+  },
+  {
+    "value": "MAT-241",
+    "synonyms": [
+      "MAT-241"
+    ]
+  },
+  {
+    "value": "MAT-275",
+    "synonyms": [
+      "MAT-275"
+    ]
+  },
+  {
+    "value": "MAT-299",
+    "synonyms": [
+      "MAT-299"
+    ]
+  },
+  {
+    "value": "MAT-325",
+    "synonyms": [
+      "MAT-325"
+    ]
+  },
+  {
+    "value": "MAT-330",
+    "synonyms": [
+      "MAT-330"
+    ]
+  },
+  {
+    "value": "MAT-350",
+    "synonyms": [
+      "MAT-350"
+    ]
+  },
+  {
+    "value": "MBA-504",
+    "synonyms": [
+      "MBA-504"
+    ]
+  },
+  {
+    "value": "MKT-205",
+    "synonyms": [
+      "MKT-205"
+    ]
+  },
+  {
+    "value": "MUS-223",
+    "synonyms": [
+      "MUS-223"
+    ]
+  },
+  {
+    "value": "MUS-276",
+    "synonyms": [
+      "MUS-276"
+    ]
+  },
+  {
+    "value": "PCC-201",
+    "synonyms": [
+      "PCC-201"
+    ]
+  },
+  {
+    "value": "PHL-210",
+    "synonyms": [
+      "PHL-210"
+    ]
+  },
+  {
+    "value": "PHL-212",
+    "synonyms": [
+      "PHL-212"
+    ]
+  },
+  {
+    "value": "PHL-230",
+    "synonyms": [
+      "PHL-230"
+    ]
+  },
+  {
+    "value": "PHL-363",
+    "synonyms": [
+      "PHL-363"
+    ]
+  },
+  {
+    "value": "PHY-101",
+    "synonyms": [
+      "PHY-101"
+    ]
+  },
+  {
+    "value": "PHY-105",
+    "synonyms": [
+      "PHY-105"
+    ]
+  },
+  {
+    "value": "PHY-215",
+    "synonyms": [
+      "PHY-215"
+    ]
+  },
+  {
+    "value": "PHY-215L",
+    "synonyms": [
+      "PHY-215L"
+    ]
+  },
+  {
+    "value": "PHY-216",
+    "synonyms": [
+      "PHY-216"
+    ]
+  },
+  {
+    "value": "PHY-216L",
+    "synonyms": [
+      "PHY-216L"
+    ]
+  },
+  {
+    "value": "PHY-25ST1",
+    "synonyms": [
+      "PHY-25ST1"
+    ]
+  },
+  {
+    "value": "POL-210",
+    "synonyms": [
+      "POL-210"
+    ]
+  },
+  {
+    "value": "POL-211",
+    "synonyms": [
+      "POL-211"
+    ]
+  },
+  {
+    "value": "POL-301",
+    "synonyms": [
+      "POL-301"
+    ]
+  },
+  {
+    "value": "POL-306",
+    "synonyms": [
+      "POL-306"
+    ]
+  },
+  {
+    "value": "POL-326",
+    "synonyms": [
+      "POL-326"
+    ]
+  },
+  {
+    "value": "POL-348",
+    "synonyms": [
+      "POL-348"
+    ]
+  },
+  {
+    "value": "POL-362",
+    "synonyms": [
+      "POL-362"
+    ]
+  },
+  {
+    "value": "POL-377",
+    "synonyms": [
+      "POL-377"
+    ]
+  },
+  {
+    "value": "POL-378",
+    "synonyms": [
+      "POL-378"
+    ]
+  },
+  {
+    "value": "PSY-108",
+    "synonyms": [
+      "PSY-108"
+    ]
+  },
+  {
+    "value": "PSY-205",
+    "synonyms": [
+      "PSY-205"
+    ]
+  },
+  {
+    "value": "PSY-211",
+    "synonyms": [
+      "PSY-211"
+    ]
+  },
+  {
+    "value": "PSY-215",
+    "synonyms": [
+      "PSY-215"
+    ]
+  },
+  {
+    "value": "PSY-216",
+    "synonyms": [
+      "PSY-216"
+    ]
+  },
+  {
+    "value": "PSY-223",
+    "synonyms": [
+      "PSY-223"
+    ]
+  },
+  {
+    "value": "PSY-224",
+    "synonyms": [
+      "PSY-224"
+    ]
+  },
+  {
+    "value": "PSY-225",
+    "synonyms": [
+      "PSY-225"
+    ]
+  },
+  {
+    "value": "PSY-310",
+    "synonyms": [
+      "PSY-310"
+    ]
+  },
+  {
+    "value": "PSY-328",
+    "synonyms": [
+      "PSY-328"
+    ]
+  },
+  {
+    "value": "PSY-375",
+    "synonyms": [
+      "PSY-375"
+    ]
+  },
+  {
+    "value": "QSO-250",
+    "synonyms": [
+      "QSO-250"
+    ]
+  },
+  {
+    "value": "QSO-321",
+    "synonyms": [
+      "QSO-321"
+    ]
+  },
+  {
+    "value": "QSO-330",
+    "synonyms": [
+      "QSO-330"
+    ]
+  },
+  {
+    "value": "QSO-340",
+    "synonyms": [
+      "QSO-340"
+    ]
+  },
+  {
+    "value": "QSO-360",
+    "synonyms": [
+      "QSO-360"
+    ]
+  },
+  {
+    "value": "QSO-511",
+    "synonyms": [
+      "QSO-511"
+    ]
+  },
+  {
+    "value": "QSO-520",
+    "synonyms": [
+      "QSO-520"
+    ]
+  },
+  {
+    "value": "QSO-560",
+    "synonyms": [
+      "QSO-560"
+    ]
+  },
+  {
+    "value": "QSO-680",
+    "synonyms": [
+      "QSO-680"
+    ]
+  },
+  {
+    "value": "SB-405",
+    "synonyms": [
+      "SB-405"
+    ]
+  },
+  {
+    "value": "SCI-219",
+    "synonyms": [
+      "SCI-219"
+    ]
+  },
+  {
+    "value": "SCS-100",
+    "synonyms": [
+      "SCS-100"
+    ]
+  },
+  {
+    "value": "SCS-200",
+    "synonyms": [
+      "SCS-200"
+    ]
+  },
+  {
+    "value": "SCS-224",
+    "synonyms": [
+      "SCS-224"
+    ]
+  },
+  {
+    "value": "SCS-444",
+    "synonyms": [
+      "SCS-444"
+    ]
+  },
+  {
+    "value": "SOC-112",
+    "synonyms": [
+      "SOC-112"
+    ]
+  },
+  {
+    "value": "SOC-213",
+    "synonyms": [
+      "SOC-213"
+    ]
+  },
+  {
+    "value": "SOC-217",
+    "synonyms": [
+      "SOC-217"
+    ]
+  },
+  {
+    "value": "SOC-317",
+    "synonyms": [
+      "SOC-317"
+    ]
+  },
+  {
+    "value": "SOC-326",
+    "synonyms": [
+      "SOC-326"
+    ]
+  },
+  {
+    "value": "SOC-335",
+    "synonyms": [
+      "SOC-335"
+    ]
+  },
+  {
+    "value": "SPED-106",
+    "synonyms": [
+      "SPED-106"
+    ]
+  },
+  {
+    "value": "SPED-230",
+    "synonyms": [
+      "SPED-230"
+    ]
+  },
+  {
+    "value": "SPED-250",
+    "synonyms": [
+      "SPED-250"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "id": "eec8ba1d-b921-4be2-aaef-8e5991dbd1a3",
+  "name": "Wellness COVID",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "All students (full time and part time) are required to be fully vaccinated against COVID-19 in order to start classes and/or physically be on the Manchester campus. Appropriate medical or religious exemptions will be considered. Proof of COVID-19 Vaccination must be provided through the CoVerified COVID Management system. For more information, please check the Wellness Center website or contact the Wellness Center directly."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

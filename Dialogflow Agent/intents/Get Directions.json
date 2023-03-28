@@ -1,0 +1,78 @@
+{
+  "id": "fb767232-3d18-463e-8b26-6d1635ad3237",
+  "name": "Get Directions",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "GetDirections",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e9223f4a-0502-4f69-bc2f-1fdc000b00a9",
+          "name": "EndLocation",
+          "required": true,
+          "dataType": "@SNHU_Locations",
+          "value": "$EndLocation",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Where would you like to go?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "7c572a1a-21ad-455c-934c-ed9fcc31bb3c",
+          "name": "StartLocation",
+          "required": true,
+          "dataType": "@SNHU_Locations",
+          "value": "$StartLocation",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Where are you currently?"
+            },
+            {
+              "lang": "en",
+              "value": "Where are you starting from?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "$StartLocation, $EndLocation"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

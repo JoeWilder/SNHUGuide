@@ -1,0 +1,35 @@
+{
+  "id": "3d6f8b3e-a67b-4fa8-9816-4ac5004e5238",
+  "name": "Tutoring Generic",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Yes, SNHU offers a couple of tutoring services, drop-in tutoring, and one-on-one tutoring. You can find a list of all of the classes SNHU offers tutoring for at the following link:\n\nhttps://snhu.mywconline.com"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

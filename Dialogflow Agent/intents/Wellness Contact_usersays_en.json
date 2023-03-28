@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1410ab43-cf4e-4817-85bf-f4672b893a81",
+    "data": [
+      {
+        "text": "I need the Wellness Center phone number.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "986ea389-ad3a-41fe-8860-48ca9bf1302d",
+    "data": [
+      {
+        "text": "I need the email for the Wellness Center.",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1c702e55-e91c-42e7-8835-535941f65453",
+    "data": [
+      {
+        "text": "What is the Wellness Center\u0027s email?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fb88ea97-1849-43ad-ae01-75aaf6d04a1d",
+    "data": [
+      {
+        "text": "What is the Wellness Center\u0027s phone number?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "3f952d1e-66f2-4f9f-bea6-348a472c07bd",
+    "data": [
+      {
+        "text": "How do I contact the Wellness Center?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

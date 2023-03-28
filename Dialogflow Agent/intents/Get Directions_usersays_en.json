@@ -1,0 +1,98 @@
+[
+  {
+    "id": "95dbaf20-af21-4305-8cb6-89280d6af05b",
+    "data": [
+      {
+        "text": "How do I get from ",
+        "userDefined": false
+      },
+      {
+        "text": "$StartLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "StartLocation",
+        "userDefined": true
+      },
+      {
+        "text": " to $",
+        "userDefined": false
+      },
+      {
+        "text": "EndLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "EndLocation",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e1eb0889-c2d4-4ff5-940e-9f038fc14b4f",
+    "data": [
+      {
+        "text": "What is the best way to get to ",
+        "userDefined": false
+      },
+      {
+        "text": "$EndLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "EndLocation",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a9174194-a72e-4271-856c-f2ee6a247fd3",
+    "data": [
+      {
+        "text": "How do I get to ",
+        "userDefined": false
+      },
+      {
+        "text": "$EndLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "EndLocation",
+        "userDefined": true
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "$StartLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "StartLocation",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "99f93e3d-61f5-49cc-893f-60d16ea2c014",
+    "data": [
+      {
+        "text": "How do I get to ",
+        "userDefined": false
+      },
+      {
+        "text": "$EndLocation",
+        "meta": "@SNHU_Locations",
+        "alias": "EndLocation",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

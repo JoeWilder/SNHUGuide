@@ -1,0 +1,383 @@
+[
+  {
+    "value": "NewCastle",
+    "synonyms": [
+      "New Castle"
+    ]
+  },
+  {
+    "value": "AthleticComplex",
+    "synonyms": [
+      "Athletic Complex"
+    ]
+  },
+  {
+    "value": "LarkinField",
+    "synonyms": [
+      "Larkin Field"
+    ]
+  },
+  {
+    "value": "Kingston",
+    "synonyms": [
+      "Kingston"
+    ]
+  },
+  {
+    "value": "Washington",
+    "synonyms": [
+      "Washington"
+    ]
+  },
+  {
+    "value": "SETA",
+    "synonyms": [
+      "SETA"
+    ]
+  },
+  {
+    "value": "StudentCenter",
+    "synonyms": [
+      "Student Center"
+    ]
+  },
+  {
+    "value": "GreenCenter",
+    "synonyms": [
+      "Green Center"
+    ]
+  },
+  {
+    "value": "Belknap",
+    "synonyms": [
+      "Belknap"
+    ]
+  },
+  {
+    "value": "Frost",
+    "synonyms": [
+      "Frost"
+    ]
+  },
+  {
+    "value": "Greenspace",
+    "synonyms": [
+      "Greenspace"
+    ]
+  },
+  {
+    "value": "Hospitality",
+    "synonyms": [
+      "Hospitality"
+    ]
+  },
+  {
+    "value": "Gustafson",
+    "synonyms": [
+      "Gustafson"
+    ]
+  },
+  {
+    "value": "Ford",
+    "synonyms": [
+      "Ford"
+    ]
+  },
+  {
+    "value": "PublicSafety",
+    "synonyms": [
+      "Public Safety"
+    ]
+  },
+  {
+    "value": "Library",
+    "synonyms": [
+      "Library"
+    ]
+  },
+  {
+    "value": "DiningHall",
+    "synonyms": [
+      "Dining Hall",
+      "Dinning",
+      "Dinning Center",
+      "Dhall",
+      "DHall",
+      "Food"
+    ]
+  },
+  {
+    "value": "ACC",
+    "synonyms": [
+      "ACC",
+      "Academic Center"
+    ]
+  },
+  {
+    "value": "Monadnock",
+    "synonyms": [
+      "Monadnock"
+    ]
+  },
+  {
+    "value": "Hampton",
+    "synonyms": [
+      "Hampton"
+    ]
+  },
+  {
+    "value": "Windsor",
+    "synonyms": [
+      "Windsor"
+    ]
+  },
+  {
+    "value": "OperationsCenter",
+    "synonyms": [
+      "Operations Center"
+    ]
+  },
+  {
+    "value": "Conway",
+    "synonyms": [
+      "Conway"
+    ]
+  },
+  {
+    "value": "Lincoln",
+    "synonyms": [
+      "Lincoln"
+    ]
+  },
+  {
+    "value": "OuelletteStadium",
+    "synonyms": [
+      "Ouellette Stadium",
+      "Stadium"
+    ]
+  },
+  {
+    "value": "Seta Annex",
+    "synonyms": [
+      "Seta Annex",
+      "Annex"
+    ]
+  },
+  {
+    "value": "Tuckerman",
+    "synonyms": [
+      "Tuckerman",
+      "Tuck"
+    ]
+  },
+  {
+    "value": "PenmenField",
+    "synonyms": [
+      "PenmenField"
+    ]
+  },
+  {
+    "value": "Webster",
+    "synonyms": [
+      "Webster"
+    ]
+  },
+  {
+    "value": "Madison",
+    "synonyms": [
+      "Madison"
+    ]
+  },
+  {
+    "value": "Lot13",
+    "synonyms": [
+      "Lot 13"
+    ]
+  },
+  {
+    "value": "Lot12",
+    "synonyms": [
+      "Lot 12"
+    ]
+  },
+  {
+    "value": "Lot11",
+    "synonyms": [
+      "Lot 11"
+    ]
+  },
+  {
+    "value": "Lot10",
+    "synonyms": [
+      "Lot 10"
+    ]
+  },
+  {
+    "value": "Lot5",
+    "synonyms": [
+      "Lot 5"
+    ]
+  },
+  {
+    "value": "Lot8",
+    "synonyms": [
+      "Lot 8"
+    ]
+  },
+  {
+    "value": "Lot7",
+    "synonyms": [
+      "Lot 7"
+    ]
+  },
+  {
+    "value": "Lot9",
+    "synonyms": [
+      "Lot 9"
+    ]
+  },
+  {
+    "value": "Lot15",
+    "synonyms": [
+      "Lot 15"
+    ]
+  },
+  {
+    "value": "Lot19",
+    "synonyms": [
+      "Lot 19"
+    ]
+  },
+  {
+    "value": "Lot17",
+    "synonyms": [
+      "Lot 17"
+    ]
+  },
+  {
+    "value": "Lot18",
+    "synonyms": [
+      "Lot 18"
+    ]
+  },
+  {
+    "value": "Lot20",
+    "synonyms": [
+      "Lot 20"
+    ]
+  },
+  {
+    "value": "Lot24",
+    "synonyms": [
+      "Lot 24"
+    ]
+  },
+  {
+    "value": "Lot16",
+    "synonyms": [
+      "Lot 16"
+    ]
+  },
+  {
+    "value": "Lot3",
+    "synonyms": [
+      "Lot 3"
+    ]
+  },
+  {
+    "value": "Lot4",
+    "synonyms": [
+      "Lot 4"
+    ]
+  },
+  {
+    "value": "Lot1",
+    "synonyms": [
+      "Lot 1"
+    ]
+  },
+  {
+    "value": "Lot2",
+    "synonyms": [
+      "Lot 2"
+    ]
+  },
+  {
+    "value": "Lot22",
+    "synonyms": [
+      "Lot 22"
+    ]
+  },
+  {
+    "value": "Lot23",
+    "synonyms": [
+      "Lot 23"
+    ]
+  },
+  {
+    "value": "Lot25",
+    "synonyms": [
+      "Lot 25"
+    ]
+  },
+  {
+    "value": "Lot26",
+    "synonyms": [
+      "Lot 26"
+    ]
+  },
+  {
+    "value": "Lot31",
+    "synonyms": [
+      "Lot 31"
+    ]
+  },
+  {
+    "value": "Lot32",
+    "synonyms": [
+      "Lot 32"
+    ]
+  },
+  {
+    "value": "Lot33",
+    "synonyms": [
+      "Lot 33"
+    ]
+  },
+  {
+    "value": "Lot30",
+    "synonyms": [
+      "Lot 30"
+    ]
+  },
+  {
+    "value": "Lot27",
+    "synonyms": [
+      "Lot 27"
+    ]
+  },
+  {
+    "value": "Lot37",
+    "synonyms": [
+      "Lot 37"
+    ]
+  },
+  {
+    "value": "Lot38",
+    "synonyms": [
+      "Lot 38"
+    ]
+  },
+  {
+    "value": "Lot39",
+    "synonyms": [
+      "Lot 39"
+    ]
+  },
+  {
+    "value": "WellnessCenter",
+    "synonyms": [
+      "Wellness Center"
+    ]
+  }
+]

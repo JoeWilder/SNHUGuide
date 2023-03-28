@@ -1,0 +1,36 @@
+{
+  "id": "1cef93e7-0bfb-4202-9313-0325c5b984f1",
+  "name": "Wellness",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "The Wellness Center offers health services, counseling, and health promotion. \n\nHealth Services offers treatment of common acute problems (e.g., colds, flu, and burns), personal health counseling, education on preventative medicine, information on birth control, referral for sexually transmitted infections testing and assistance processing insurance claims. Health Services is a licensed facility and must follow guidelines established by the Department of Health and Human Services.\n\nThe counseling service offers professional trained staff to assist students in coping with problem areas in their life that might interfere with maximizing their college and life potential. Examples of some difficulties experienced by college students include problems in interpersonal relationships, depression, anxiety, and grieving over the loss of a friend or family member.\n\nThe Wellness Center\u0027s health promotion and education programs are focused on helping students develop healthy lifestyles and address concerns before they need treatment."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
+}
