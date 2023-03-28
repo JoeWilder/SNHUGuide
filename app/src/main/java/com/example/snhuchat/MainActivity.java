@@ -117,8 +117,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
 
-                Log.d(TAG, result.getParameters().getFieldsMap().toString());
-
                 Set<String> locations = new HashSet<>();
                 boolean missingLocation = false;
 
