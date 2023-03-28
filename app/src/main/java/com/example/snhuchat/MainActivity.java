@@ -1,12 +1,11 @@
 package com.example.snhuchat;
 
-import android.app.ActionBar;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,11 +13,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.snhuchat.dialogflow.DialogflowBot;
 import com.google.cloud.dialogflow.v2.QueryResult;
+import com.google.protobuf.Value;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Objects;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
@@ -103,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
         String intent = String.valueOf(result.getIntent().getDisplayName());
         String returnMessage = result.getFulfillmentText();
 
+
         switch(intent)
         {
             case("Default Welcome Intent"):
@@ -114,10 +117,26 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
 
-                String fieldValue = result.getParameters().getFieldsMap().entrySet().iterator().next().getValue().getStringValue();
+                Log.d(TAG, result.getParameters().getFieldsMap().toString());
 
-                if (fieldValue.equals(""))
-                {
+                Set<String> locations = new HashSet<>();
+                boolean missingLocation = false;
+
+                for (Map.Entry<String, Value> entry : result.getParameters().getFieldsMap().entrySet()) {
+                    String location = entry.getValue().getStringValue();
+                    if (location.equals("")) {
+                        missingLocation = true;
+                        break;
+                    }
+                    if (locations.contains(location)) {
+                        returnMessage = "Please enter two different locations!";
+                        missingLocation = true;
+                        break;
+                    }
+                    locations.add(location);
+                }
+
+                if (missingLocation) {
                     break;
                 }
 
@@ -144,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
             default:
                 break;
         }
+
 
         messageModalArrayList.add(new MessageModal(returnMessage, BOT_KEY));
         messageRVAdapter.notifyDataSetChanged();
