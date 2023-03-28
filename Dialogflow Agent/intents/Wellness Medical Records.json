@@ -1,0 +1,35 @@
+{
+  "id": "4d5defbd-56d9-4841-b55f-0c5ffe0bbda4",
+  "name": "Wellness Medical Records",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "All residential students, full time undergraduate campus students, international students, and full time graduate campus students taking classes on the Manchester campus must provide a health history form, immunization records, tuberculosis screening, and (for optional sports) a physical exam record. These materials must be submitted through mySNHU prior to the start of classes on campus. For more information, please check the Wellness Center website or contact the Wellness Center directly."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

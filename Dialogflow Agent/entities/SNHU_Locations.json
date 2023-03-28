@@ -1,0 +1,9 @@
+{
+  "id": "8b71327a-01cf-41fe-986d-1d0d7e3209a5",
+  "name": "SNHU_Locations",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

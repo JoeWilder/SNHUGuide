@@ -1,0 +1,44 @@
+[
+  {
+    "id": "920a15e7-10f0-482f-94f1-b666c8bfec3f",
+    "data": [
+      {
+        "text": "Does ",
+        "userDefined": false
+      },
+      {
+        "text": "$Class",
+        "meta": "@Tutoring_Classes",
+        "alias": "Class",
+        "userDefined": true
+      },
+      {
+        "text": " have tutoring?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "81e3cf22-1d7f-4abe-9d0b-721ff9dc8c00",
+    "data": [
+      {
+        "text": "Does SNHU offer tutoring for ",
+        "userDefined": false
+      },
+      {
+        "text": "$Class",
+        "meta": "@Tutoring_Classes",
+        "alias": "Class",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

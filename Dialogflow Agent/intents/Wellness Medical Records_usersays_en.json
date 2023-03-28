@@ -1,0 +1,54 @@
+[
+  {
+    "id": "eaa78795-d680-4b4d-b924-f547c11bad71",
+    "data": [
+      {
+        "text": "Submitting medical records",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "95efcdd5-548a-4190-b68d-9e5efb9da696",
+    "data": [
+      {
+        "text": "Help with medical records",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ec6f2f5b-534d-4a25-b74c-e85c5118624b",
+    "data": [
+      {
+        "text": "Do I need medical records",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e03c7493-02be-4671-a0c4-058688ccd783",
+    "data": [
+      {
+        "text": "Medical records",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

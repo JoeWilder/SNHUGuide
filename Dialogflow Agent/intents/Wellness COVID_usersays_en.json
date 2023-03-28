@@ -1,0 +1,62 @@
+[
+  {
+    "id": "928a45e3-2a99-4c37-893e-dfa84bab87ec",
+    "data": [
+      {
+        "text": "COVID-",
+        "userDefined": false
+      },
+      {
+        "text": "19",
+        "userDefined": false
+      },
+      {
+        "text": " information",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "3c6a3343-b6c7-41d7-b1b4-74a07572fc27",
+    "data": [
+      {
+        "text": "Vaccination deadline",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f359b80b-8ee4-4745-bceb-7aeef4d2c924",
+    "data": [
+      {
+        "text": "Vaccination information",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "945148a0-a9fb-4dfc-9555-26910f814cc7",
+    "data": [
+      {
+        "text": "Do I need to be vaccinated",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

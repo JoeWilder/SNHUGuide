@@ -1,0 +1,202 @@
+EDGE ID,node 1,node 2,distance,description [1 to 2] / [2 to 1]
+1,Lot13,int1,1.4,Head [east out of] / [west towards] Parking Lot 13
+2,int1,Lot12,0.5,Head [southwest towards] / [northeast out of] Parking Lot 12
+3,Lot12,Lot11,1,Head [southwest towards Parking Lot 11] / [northeast towards Parking Lot 12]
+4,Lot10,Lot11,1.4,Head [southwest towards Parking Lot 11] / [northeast towards Parking Lot 13]
+5,int2,lot10,0.7,Head [southwest towards] / [northeast out of] Parking Lot 10
+6,int2,int1,0.6,Head [west] / [east]
+7,int2,int3,1.2,Head [east] / [west]
+8,int3,int4,1.4,Head [east] / [west]
+9,int3,int5,2.7,Head [southwest] / [northeast]
+10,int5,int6,1.8,Head [southwest until you turn south and then continue] / [north until you turn northeast and then continue]
+11,int6,Lot6,0.5,Head [southeast towards] / [northwest out of] Parking Lot 6
+12,Lot6,Newcastle,0.1,Head [into] / [out of] Newcastle
+13,Newcastle,Lot8,0.8,Head [from Newcastle towards Parking Lot 8] / [towards Newcastle from Parking Lot 8]
+14,Lot8,int6,1,Head [southwest from] / [northeast towards] Parking Lot 8
+15,Lot9,int7,1.4,Head [southwest away from] / [northeast towards] Parking Lot 9
+16,int7,Lot8,0.3,Head [southwest towards] / [northeast away from] Parking Lot 8
+17,int4,Lot9,1.7,Head [southwest towards] / [northeast away from] Parking Lot 9
+18,int6,Lot5,1.1,Head [south towards] / [north away from] Parking Lot 5
+19,int17,Lot4,1.5,Head [southeast then turn right and continue into] / [northwest then turn left and continue away from] Parking Lot 4
+20,Lot5,int17,3.5,Head [southeast then turn left and continue] / [northwest then turn right and continue]
+21,int17,int18,0.8,Head [east towards] / [west away from] Parking Lot 3
+22,int18,Lot3,0.4,Head across the street [towards] / [away from] Parking Lot 3
+23,int18,AthleticComplex,1.4,Head [northwest towards] / [southeast away from] the Athletic Complex
+24,int8,AthleticComplex,1.4,Head [southeast towards] / [northwest away from] the Athletic Complex
+25,int8,Lot6,0.7,Head [northwest towards] / [southeast away from] Parking Lot 6
+26,int8,int9,0.6,Head [northeast along] / [southwest along] Larkin Field
+27,int9,Newcastle,0.6,Head [northwest towards] / [southeast away from] Newcastle
+28,int8,int18,2.8,Head [northwest] / [southeast] along the Athletic Complex
+29,int9,Lot7,0.5,Head [northeast] / [southwest]
+30,Lot7,int10,0.4,Head [northeast] / [southwest]
+31,int10,int7,1.1,Head [northwest] / [southeast]		
+32,int10,int11,0.6,Head [northeast] / [southwest]
+33,int11,Lot9,2,Head [northwest towards Lot 9 then turn right and continue] /  [southwest away from Lot 9 then turn left and continue] 
+34,int11,int7,1.4,Head [northwest towards Lot 9 then turn left and continue] /  [northeast slightly towards Lot 9 then turn left and continue] 
+35,int11,int12,0.9,Head [northeast] / [southwest]	
+36,int12,int13,2.3,Head [northeast] / [southwest] around Kingston
+37,int12,Lot9,0.4,Head [northwest towards] / [southeast away from] Parking Lot 9
+38,int13,Washington,0.3,Head [north into] / [south out of] Washington                        
+39,Washington,Lot15,0.2,Head [north into Lot 15] / [south into Washington]     
+40,int4,Lot15,0.7,Head [northeast then turn right and continue towards] / [west then turn left and continue away from] Lot 15
+41,Lot15,int14,0.4,Head [southeast away from] / [northwest towards] Parking Lot 15
+42,int13,int14,1.3,Head [east] / [south] then turn around Washington building
+43,int15,int13,0.4,Head [north towards Washington] / [south]                        
+44,int15,int16,1.7,Head [southwest] / [northeast]
+45,int16,int11,1.5,Head [west] / [east]
+46,int15,Kingston,1.1,Head [west towards] / [east away from] Kingston
+47,int16,Kingston,0.3,Head [north towards] / [south away from] Kingston
+48,int12,Kingston,0.6,Head [east towards] / [west away from] Kingston
+49,int18,LarkinField,1.9,Walk [north towards] / [south away from] the center of Larkin Field
+50,int8,LarkinField,1,Walk [east towards] / [west away from] the center of Larkin Field
+51,LarkinField,int19,1,Walk [west away from] / [east towards] the center of Larkin Field
+52,int19,int10,1.9,Head [northwest] / [southeast]
+53,int22,int19,0.8,Head [northwest] / [southeast]
+54,int19,int20,1.7,Head [northeast] / [southwest] across the back of the Student Center
+55,int20,int21,1.5,Head [northeast] / [southwest] across the back of the Green Center
+56,int25,int20,1,Head [northwest] / [southeast] in-between the Student Center and Green Center
+57,int21,int26,0.9,Head [southeast] / [northwest] around the Green Center
+58,Lot3,int22,1,Head [northeast from] / [southwest away from] Parking Lot 3
+59,int22,int23,0.5,Head [northeast] / [southwest] until you're just northwest of Robert Frost
+60,int23,int24,0.6,Head [northeast] / [southwest] until you're in front of the Student Center
+61,int24,int25,0.6,Head [northeast] / [southwest] until you're just northwest of the center of the Green Space
+62,int25,int26,1,Head [northeast] / [southwest] until you're on the edge of the Green Space
+63,int20,int16,0.5,Head [northwest towards the front of] / [southeast away from] Kingston
+64,int21,int15,0.7,Head [northwest] / [southeast]		
+65,int23,StudentCenter,0.5,Head [north into] / [south out of] the Student Center
+66,int24,StudentCenter,0.4,Head [northwest into] / [southeast out of] the Student Center
+67,int25,GreenCenter,0.5,Head [north into] / [south out of] the Green Center
+68,int26,GreenCenter,0.6,Head [west into] / [east out of] the Student Center		
+69,int26,int75,0.6,Head [northeast towards] / [southwest away from] the Hospitality front parking lot
+70,int75,Hospitality,0.5,Head [east into] / [west out of] the Hospitality building
+71,int75,int74,0.3,Head [north towards] / [south away from] the SETA building
+72,int74,SETA,1,Head [north into] / [south out of] the SETA building
+73,int26,int74,0.7,Head [northeast] / [southwest]
+74,int15,SETA,1.5,Head [east then turn left and continue into] / [southwest then continue away from] SETA
+75,int21,SETA,1.1,Head [northeast into] / [southwest away from] SETA
+76,int74,int27,0.9,Head [northeast] / [southwest] along the edge of SETA
+77,int27,Lot16,0.2,Head [southeast into] / [northwest away from] Parking Lot 16
+78,int27,int28,0.7,Head [northeast] / [southwest] along the edge of SETA
+79,int28,int14,1.4,Head [northwest] / [southeast] along the edge of SETA
+80,int28,int29,0.5,Head [northeast] / [southwest]
+81,int29,Lot17,1.2,Head [northwest towards] / [southeast away from] Parking Lot 17
+82,int29,int30,2.2,Head [northeast] / [southwest] down the long path connected to Webster	
+83,int30,Lot18,0.6,Head [northwest] / [southeast] towards Parking Lot 18
+84,Lot18,Lot19,1.6,Head [northwest then turn left and continue towards Parking Lot 19] / [east then turn right and continue towards Parking Lot 18]
+85,Lot19,int36,5.3,Head [northeast and continue on the road until you've gone completely around Webster] / [north then turn left and continue towards Parking Lot 19]
+86,int36,Madison,0.9,Head [southeast towards] / [northwest away from] Madison
+87,int36,int35,0.7,Head [southwest] / [northeast]
+88,int35,int34,1.4,Head [southwest] / [northeast]
+89,int34,int71,2.8,Head [southwest] / [northeast]
+90,int71,int33,1.5,Head [southwest] / [northeast]
+91,int33,int32,1.9,Head [southwest toward] / [northeast away from] the crosswalk in the center of campus
+92,int35,int30,1.2,Head [west] / [east] around Webster
+93,int35,Webster,0.7,Head [northwest into] / [southeast out of] Webster
+94,int35,Lot18,2.8,"[In the Webster parking lot, head north then turn left and continue towards Parking Lot 18] / [Head northeast then turn right to go around Webster]"
+95,Webster,Lot18,0.4,Head [east towards Lot 18] / [west into Webster]
+96,int71,int28,1.2,Head [northwest across the street towards] / [southeast across the street away from] SETA
+97,int32,GreenSpace,0.2,Head [northwest towards] / [southwest away from] the Green Space
+98,GreenSpace,int24,0.9,Head [west across] / [east across] the Green Space]
+99,GreenSpace,int25,0.5,Head [northwest across] / [southeast across] the Green Space]
+100,GreenSpace,int26,1.1,Head [north across] / [south across] the Green Space]
+101,int32,Frost,1.1,Head [southwest and walk along the path towards] / [southeast and walk along the path away from] Robert Frost
+102,int23,Frost,0.3,Head [southeast into] / [northwest away from] Robert Frost
+103,int72,Frost,0.4,Head [northeast into] / [southwest away from] Robert Frost
+104,int72,int22,0.5,Head [northwest] / [southeast] along the side of Robert Frost
+105,int72,Belknap,0.3,Head [southwest into] / [northeast out of] Belknap
+106,int31,Belknap,1,Head [northeast along Parking Lot 3 until you reach] / [south along Parking Lot 3 out of] Belknap
+107,int31,int72,1.9,Head [northeast then turn left] / [southeast then turn right] around Belknap Hall
+108,int31,int18,1,Head [northwest] / [southeast] along Parking Lot 3
+109,int33,ACC,0.8,Head [east into] / [west out of] the ACC building
+110,int33,Lot23,1.7,Head [southeast into] / [northwest out of] Parking Lot 23
+111,int33,Lot22,2,Head [southeast into] / [northwest out of] Parking Lot 22
+112,Lot22,int41,0.9,Head [southwest away from] / [northeast towards] Parking Lot 22
+113,int32,DiningHall,0.8,Head [east into] / [west away from] the Dining Hall
+114,int32,int41,1.4,Head [southeast] / [northwest] in-between the Library and Dining Hall
+115,int32,int38,0.9,Head [southeast towards] / [northwest away from] the curved path leading to the Library
+116,int38,Library,0.7,Head [south into] / [north away from] the Library
+117,PublicSafety,Library,1.6,Head [northeast down the street then turn right and head into the Library] / [northwest out of the Library and turn left towards the Public Safety house]
+118,PublicSafety,int32,2,Head [northeast down the street away from] / [southwest down the street towards] Public Safety
+119,Ford,PublicSafety,0.4,Head [from the front of the Ford house to Public Safety] / [from the front of the Public Safety house to Ford]
+120,int31,Ford,1.5,Head [northeast towards] / [southwest away from] the Ford house
+121,int41,int68,2.2,Head [northeast] / [southwest] behind the back of the Library
+122,int68,int40,0.5,Head [west towards] / [east away from] Gustafson
+123,int40,Gustafson,0.4,Head [northwest into] / [southeast out of] Gustafson
+124,int31,int37,0.4,Head [southeast] / [northwest] along Parking Lot 2
+125,int37,int39,0.5,Head [southeast] / [northwest] along Parking Lot 2
+126,int39,int42,1,Head [east away from] / [west towards] Parking Lot 2
+127,int42,int40,1.1,Head [northwest towards] / [southeast away from] Gustafson
+128,int37,Lot2,0.9,Head [south into] / [north away from] Parking Lot 2
+129,int39,Lot2,0.4,Head [south into] / [north away from] Parking Lot 2
+130,Lot2,Arboreum,0.2,Head [into] / [out of] the Arboreum		
+131,int42,int43,1,Head [east] / [west] along Parking Lot 1
+132,int43,int44,0.6,Head [east] / [west] along Parking Lot 1
+133,int44,int52,1,Head [east] / [west] along Parking Lot 1
+134,int52,int61,2.4,Head [southeast] / [northwest] along the road between Parking Lot 32 and 33
+135,int61,int62,0.8,Head [east] / [west]
+136,Lot32,int62,0.9,Head [east away from] / [west into] Parking Lot 32
+137,Lot1,Lot32,2.2,Head [east into Parking Lot 32] / [west into Parking Lot 1]
+138,int43,Lot1,0.3,Head [southeast into] / [northwest away from] Parking Lot 1
+139,Lot32,int52,1.1,Head [northwest towards] / [southeast away from] the road entrance between Lot 1 and 32
+140,Lot1,int52,1.2,Head [east towards] / [west away from] the road entrance between Lot 1 and 32
+141,int52,Lot33,0.5,Head [northeast into] / [southwest away from] Parking Lot 33
+142,int42,OperationsCenter,3.5,Head [southeast towards] / [northwest away from] the Operations Center
+143,int43,int68,1.3,Head [northwest] / [southeast]
+144,int44,int45,0.4,Head [north towards] / [south away from] Monadnock
+145,int45,int46,0.8,Head [north] / [south] around Monadnock
+146,int46,int47,0.5,Head [north] / [south]
+147,int47,int41,0.3,Head [northwest] / [southeast] towards the Dining Hall
+148,int45,Monadnock,1.2,Head [east into] / [west away from] Monadnock
+149,int46,Monadnock,0.6,Head [southeast into] / [northwest away from] Monadnock
+150,Monadnock,int73,1,Head [northeast from Monadnock into the forest] / [southwest from the forest into Monadnock]
+151,int47,int73,1.1,Head [east into] / [west away from] the forest
+152,Lot22,int73,0.9,Head [southeast into the forest from Lot 22] / [northwest into Lot 22 from the forest]
+153,int73,int48,0.8,Head [northeast out of] / [southwest into] the forest
+154,int71,int51,2.6,Head [southeast off of] / [northwest into] the main road on campus
+155,int51,int70,1.2,Head [southeast] / [northwest]
+156,int70,int58,1.5,Head [southeast towards] / [northwest away from] an intersection
+157,int58,int57,0.4,Head [southeast away from] / [northwest towards] an intersection
+158,int57,int63,2.3,Head [south] / [north] along Parking Lot 30
+159,int63,int62,1.5,Head [southwest until you hit] / [northeast away from] a fork in the road
+160,int63,int53,1,Head [west off] / [east towards] the main road
+161,int53,int54,0.9,Head [west towards] / [east away from] the outer edges of Tuckerman
+162,int53,int55,0.9,Head [northwest towards] / [southeast away from] the outer edges of Tuckerman
+163,int54,Lot31,0.6,Head [northeast towards] / [southwest away from] Parking Lot 31
+164,int55,Lot31,0.4,Head [west towards] / [east away from] Parking Lot 31
+165,int55,int56,0.4,Head [west away from] / [east toward] the outer edges of Tuckerman
+166,int54,int69,1.7,Head [northwest then turn right] / [southwest then turn left] around Tuckerman
+167,int56,int69,0.9,Head [west] / [east] along Tuckerman
+168,int69,int48,0.4,Head [northwest away from] / [southeast towards] Tuckerman
+169,Lot31,Tuckerman,0.2,Head [northwest into Tuckerman] / [southeast into Lot 31]
+170,Lot25,int48,0.5,Head [southwest out of] / [northeast into] Parking Lot 25
+171,int58,Windson,1,Head [west towards] / [east away from] Windson
+172,Windson,int49,0.6,Head [northwest away from] / [southeast towards] Windson
+173,int70,int50,0.6,Head [northwest away from] / [southeast towards] the main road
+174,int50,int49,0.4,Head [south] / [north] along Hampton
+175,int49,Hampton,0.2,Head [northwest into] / [southeast out of] Hampton
+176,int49,Lot25,0.5,Head [south into] / [north away from] Parking Lot 25
+177,int34,Lot20,0.3,Head [east into] / [west out of] Parking Lot 20
+178,int34,PenmenField,1.5,Head [southeast towards] / [northwest away from] Penmen Field
+179,Lot20,PenmenField,1.3,Head [from Lot 20 to southeast towards] / [northwest towards Lot 20 away from] Penmen Field
+180,PenmenField,Lot24,2.2,Head [southwest then turn left and continue towards Parking Lot 24] / [northwest then turn right and continue towards Penmen Field]
+181,Lot24,Lot26,2.4,Head [southeast towards Lot 26] / [northwest towards Lot 24]
+182,Lot26,int60,0.7,Head [southeast away from] / [northwest towards] Parking Lot 26
+183,int60,int59,0.6,Head [south] / [north] along the green space
+184,int60,Lincoln,0.9,Head [east towards] / [west away from] Lincoln
+185,int59,Conway,0.9,Head [southeast towards] / [northwest away from] Conway
+186,Lincoln,Conway,0.7,Head [from Lincoln to Conway] / [from Conway to Lincoln]
+187,Lincoln,Lot27,0.7,Head [east towards Lot 27] / [west towards Lincoln]
+188,Conway,Lot27,0.7,Head [southeast towards Lot 27] / [northwest towards Conway]
+189,int58,int59,1.3,Head [east then turn right and continue] / [northwest then turn left and continue]
+190,int57,Lot30,1,Head [southeast into] / [northwest away from] Parking Lot 30
+191,int63,Lot30,1,Head [northeast into] / [southwest away from] Parking Lot 30
+192,int62,int64,1.5,Head [southeast off of] / [northwest into] the main road on campus
+193,int64,Lot37,0.7,Head [east into] / [west out of] Parking Lot 37
+194,int64,int65,3.3,Head [southeast] / [northwest]
+195,int65,OuelletteStadium,6.3,Head [northeast off the main road and continue towards Ouellette Stadium] / [southwest away from Ouellette Stadium]
+196,int65,Lot38,6,Head [northeast off the main road and continue towards Parking Lot 38] / [southwest away from Parking Lot 38]
+197,int65,int66,4,Head [south] / [north]
+198,int66,SetaAnnex,1.6,Head [east off the road into the SETA Annex] / [west away from the SETA Annex onto the road]
+199,int66,int67,0.9,Head [south] / [north] past the SETA Annex
+200,int67,Lot39,1,Head [southeast into] / [northwest out of] Parking Lot 39
+201,int67,Lot40,4,Head [south towards] / [north away from] Parking Lot 40

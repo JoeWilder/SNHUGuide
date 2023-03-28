@@ -1,0 +1,58 @@
+{
+  "id": "13540768-7c60-4f22-81e9-1e86b54a3c75",
+  "name": "Get Location",
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d957a66e-a889-4757-a7d7-75abc3c83d3c",
+          "name": "EndLocation",
+          "required": true,
+          "dataType": "@SNHU_Locations",
+          "value": "$EndLocation",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What was the name of the location?"
+            },
+            {
+              "lang": "en",
+              "value": "I\u0027m sorry, I didn\u0027t catch the location name. Can you tell me again?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "$EndLocation"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
