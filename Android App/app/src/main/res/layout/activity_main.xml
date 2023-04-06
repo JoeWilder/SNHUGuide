@@ -7,21 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.SNHUChat.AppBarOverlay">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/purple_700"
-        app:popupTheme="@style/Theme.SNHUChat.PopupOverlay"
-        app:title="SNHUGuide"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            app:popupTheme="@style/Theme.SNHUChat.PopupOverlay"
+            app:title="SNHUGuide" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#CDDC39"
+            android:backgroundTint="@color/purple_700"
+            android:drawableTint="@color/purple_700"
+            android:foregroundTint="@color/purple_700"
+            android:text="MAP"
+            app:iconTint="@color/purple_700"
+            android:translationZ="100dp" />
+
+    </LinearLayout>
 
     <!--recycler view to display our chats-->
 
@@ -62,5 +75,22 @@
             android:contentDescription="@string/todo" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backgroundTint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/blackbackground" />
+
+    <ImageView
+        android:id="@+id/mapImage"
+        android:layout_width="359dp"
+        android:layout_height="654dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/snhumapwithnodes" />
 
 </RelativeLayout>
