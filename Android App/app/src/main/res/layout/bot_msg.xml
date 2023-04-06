@@ -35,6 +35,7 @@
             android:padding="3dp"
             android:textSize="23sp"
             android:text="@string/snhu_chat"
+            android:autoLink="web"
             android:textColor="@color/black" />
 
     </LinearLayout>
