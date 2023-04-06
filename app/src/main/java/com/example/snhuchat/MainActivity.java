@@ -7,9 +7,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,15 +24,9 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public class MainActivity extends AppCompatActivity {
-
-    private final String TAG = "mainactivity";
     private EditText userMsgEdt;
-
     DialogflowBot bot;
-
     private CampusMap map;
-
-    private LanguageDirections translator;
     private ArrayList<MessageModal> messageModalArrayList;
     private MessageRVAdapter messageRVAdapter;
 
@@ -49,28 +41,22 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView chatsRV = findViewById(R.id.idRVChats);
         ImageButton sendMsgIB = findViewById(R.id.idIBSend);
         userMsgEdt = findViewById(R.id.idEdtMessage);
-
         messageModalArrayList = new ArrayList<>();
 
-
-
         // adding on click listener for send message button.
-        sendMsgIB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // checking if the message entered by user is empty or not.
-                if (userMsgEdt.getText().toString().isEmpty()) {
-                    // if the edit text is empty display a toast message.
-                    Toast.makeText(MainActivity.this, "Please enter your message..", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                // calling a method to send message to our bot to get response.
-                sendMessage(userMsgEdt.getText().toString());
-
-                //setting text in our edit text as empty
-                userMsgEdt.setText("");
+        sendMsgIB.setOnClickListener(v -> {
+            // checking if the message entered by user is empty or not.
+            if (userMsgEdt.getText().toString().isEmpty()) {
+                // if the edit text is empty display a toast message.
+                Toast.makeText(MainActivity.this, "Please enter your message..", Toast.LENGTH_SHORT).show();
+                return;
             }
+
+            // calling a method to send message to our bot to get response.
+            sendMessage(userMsgEdt.getText().toString());
+
+            //setting text in our edit text as empty
+            userMsgEdt.setText("");
         });
 
         //initializing our adapter class and passing our array list to it.
@@ -105,10 +91,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void processResponse(QueryResult result, String BOT_KEY) {
-        String intent = String.valueOf(result.getIntent().getDisplayName());
+        String intent = result.getIntent().getDisplayName();
         String returnMessage = result.getFulfillmentText();
 
 
+        String TAG = "mainactivity";
         switch(intent)
         {
             case("Default Welcome Intent"):
