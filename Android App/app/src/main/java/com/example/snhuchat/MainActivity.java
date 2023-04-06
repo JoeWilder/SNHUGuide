@@ -3,9 +3,11 @@ package com.example.snhuchat;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         RecyclerView chatsRV = findViewById(R.id.idRVChats);
         ImageButton sendMsgIB = findViewById(R.id.idIBSend);
+        Button mapButton = findViewById(R.id.mapButton);
+        ImageView mapImage = findViewById(R.id.mapImage);
+        ImageView backgroundTint = findViewById(R.id.backgroundTint);
         userMsgEdt = findViewById(R.id.idEdtMessage);
 
         messageModalArrayList = new ArrayList<>();
@@ -70,6 +75,23 @@ public class MainActivity extends AppCompatActivity {
 
                 //setting text in our edit text as empty
                 userMsgEdt.setText("");
+            }
+        });
+
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                if (mapImage.getVisibility() == View.VISIBLE)
+                {
+                    mapImage.setVisibility(View.INVISIBLE);
+                    backgroundTint.setVisibility(View.INVISIBLE);
+                }
+                else // If invisible
+                {
+                    mapImage.setVisibility(View.VISIBLE);
+                    backgroundTint.setVisibility(View.VISIBLE);
+                }
             }
         });
 
